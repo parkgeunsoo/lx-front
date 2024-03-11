@@ -1,0 +1,12 @@
+// icons
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  flex-shrink: 0;
+}
+.icon-play{
+  width: 12px; height: 16px; background-image: url('../images/icon-play.svg');
+}
