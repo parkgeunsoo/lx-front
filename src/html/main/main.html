@@ -133,7 +133,7 @@
                 <!-- 페이지 네비게이션 -->
                 <div class="page-nav">
                     <div class="swiper-pagination"></div>
-                    <button type="button"><i class="icon-play"></i></button>
+                    <button class="swiper-toggle"><i class="icon-play"></i></button>
                 </div>
 
             </div>
@@ -142,7 +142,7 @@
     </div>
     <script>
         // Swiper 인스턴스 생성
-        var mySwiper = new Swiper('.swiper', {
+        var mainSwiper = new Swiper('.swiper', {
             slidesPerView: 3.4, // 각 슬라이드가 부분적으로 표시됩니다.
             loop: true,
             spaceBetween: 20,
@@ -155,6 +155,19 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            toggles: {
+                el: '.swiper-toggle',
+                activeClass: 'swiper-toggle-active',
+            },
+        });
+        document.querySelector('.swiper-toggle').addEventListener('click', function () {
+            if (mainSwiper.autoplay.running) {
+                mainSwiper.autoplay.stop();
+                $('.swiper-toggle').addClass('active');
+            } else {
+                mainSwiper.autoplay.start();
+                $('.swiper-toggle').removeClass('active');
+            }
         });
     </script>
 </body>

@@ -129,4 +129,11 @@
       }
     }
   }
+  .swiper-toggle{
+      &.active{
+        .icon-play{
+            background-image: url('../images/icon-pause.png');
+        }
+      }
+  }
 }
