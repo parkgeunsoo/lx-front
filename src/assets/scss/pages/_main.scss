@@ -1,64 +1,132 @@
-.visual{
-    padding: 0 30px;
+.visual {
+  padding: 0 30px;
 }
-.main-bg{
-    width: 100%; height: 720px; background-image: url('../images/main-banner.png'); background-size: cover; background-position: center; position: relative; border-radius: 16px;
-    .text-box{
-        position: absolute; top: 172px; left: 128px;
-        .title{
-            font-size: 70px; font-weight: 700; line-height: 1;
-            letter-spacing: 0.6px; color: #fff;
-        }
-        .desc{
-            font-size: 24px;  letter-spacing: -0.5px; color: rgba(255, 255, 255, 0.8); margin-top: 40px;
-        }
+.main-bg {
+  width: 100%;
+  height: 720px;
+  background-image: url("../images/main-banner.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 16px;
+  .text-box {
+    position: absolute;
+    top: 172px;
+    left: 128px;
+    .title {
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.6px;
+      color: #fff;
     }
+    .desc {
+      font-size: 24px;
+      letter-spacing: -0.5px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 40px;
+    }
+  }
+  .img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 225px;
+  }
 }
-.main-swiper{
-    margin-top: -64px; padding: 35px 40px 140px !important;
-    .card{
-        height:300px; border-radius: 20px; padding: 40px 30px; box-shadow: 2px 3.5px 7.6px 0.4px rgba(0, 0, 0, 0.05); background-color: #fff; position: relative; transition: all .5s;
-        .title{
-            font-size: 30px; font-weight: 700; color: #000; margin-bottom: 20px;
-        }
-        .desc{
-            font-size: 18px; color: #444; line-height: 1.44;
-        }
-        .more-btn{
-            width: 90px; font-size: 16px; font-weight: 500; color: #111; padding: 0; border-radius: 30px; border: 2px solid #111; margin-top: 60px;
-        }
-        .img{
-            position: absolute; bottom: 40px; right: 40px;
-        }
-        &:hover{
-            background-color: $green; margin-top: -35px; transition: all .5s;
-            .title{color: #fff;}
-            .desc{color: #fff;}
-            .more-btn{
-               color: #fff !important; border: 2px solid #111;  background-color: #111 !important;
-            }
-        }
+.main-swiper {
+  margin-top: -64px;
+  padding: 35px 40px 140px !important;
+  .card {
+    height: 300px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 2px 3.5px 7.6px 0.4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    position: relative;
+    transition: all 0.5s;
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px;
     }
-    .swiper-slide-active{
-        .card{
-            background-color: $green; margin-top: -35px; transition: all .5s;
-            .title{color: #fff;}
-            .desc{color: #fff;}
-            .more-btn{
-               color: #fff !important; border: 2px solid #111;  background-color: #111 !important;
-            }
-        }
+    .desc {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.44;
     }
-    .page-nav{
-        display: flex; align-items: center; gap: 25px; margin-top: 60px;
-        .swiper-pagination{
-            width: auto; display: flex; position: static; text-align: left; 
-            .swiper-pagination-bullet{
-                width: 30px; height: 4px; background-color: #e0e0e0; margin: 0 5px; border-radius: 0; opacity: 1;
-                &.swiper-pagination-bullet-active{
-                    background-color: #000;
-                }
-            }
-        }
+    .more-btn {
+      width: 90px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #111;
+      padding: 0;
+      border-radius: 30px;
+      border: 2px solid #111;
+      margin-top: 60px;
     }
+    .img {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+    }
+    &:hover {
+      background-color: $green;
+      margin-top: -35px;
+      transition: all 0.5s;
+      .title {
+        color: #fff;
+      }
+      .desc {
+        color: #fff;
+      }
+      .more-btn {
+        color: #fff !important;
+        border: 2px solid #111;
+        background-color: #111 !important;
+      }
+    }
+  }
+  .swiper-slide-active {
+    .card {
+      background-color: $green;
+      margin-top: -35px;
+      transition: all 0.5s;
+      .title {
+        color: #fff;
+      }
+      .desc {
+        color: #fff;
+      }
+      .more-btn {
+        color: #fff !important;
+        border: 2px solid #111;
+        background-color: #111 !important;
+      }
+    }
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px;
+    .swiper-pagination {
+      width: auto;
+      display: flex;
+      position: static;
+      text-align: left;
+      .swiper-pagination-bullet {
+        width: 30px;
+        height: 4px;
+        background-color: #e0e0e0;
+        margin: 0 5px;
+        border-radius: 0;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background-color: #000;
+        }
+      }
+    }
+  }
 }
