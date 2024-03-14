@@ -348,17 +348,21 @@
 .font-sm {
   font-size: 13px;
 }
-
-.text-green {
-  color: #009881 !important;
+.text-dark {
+  color: #000 !important;
 }
-
+.text-green {
+  color: #00b8a3 !important;
+}
+.text-gray {
+  color: #999999 !important;
+}
 .text-blue {
   color: #4285f4 !important;
 }
 
 .text-danger {
-  color: #fe3b30 !important;
+  color: #ff453a !important;
 }
 
 .mr-10 {
