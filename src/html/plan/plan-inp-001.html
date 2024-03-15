@@ -13,14 +13,218 @@
                 <p class="title">신청현황</p>
             </div>
             <div class="main-container">
-
+                <div class="status-color">
+                    <p>상태 색상 : </p>
+                    <div class="badge-list">
+                        <span class="badge badge-primary">승인</span>
+                        <span class="badge badge-danger">반려</span>
+                        <span class="badge badge-dark">대기</span>
+                        <span class="badge badge-gray">미신청</span>
+                    </div>
+                </div>
+                <div class="status-tab">
+                    <a href="@@webRoot/html/plan/plan-inp-001.html" class="tab tab-1 success">
+                        <div class="status-tab__head">
+                            <p>최종승인</p>
+                            <i class="icon-inp-01"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-approval"></i>
+                                <p class="text-green">승인</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-inp-001.html" class="tab tab-2 active">
+                        <div class="status-tab__head">
+                            <p>인프라</p>
+                            <i class="icon-inp-02"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-companion"></i>
+                                <p class="text-danger">반려</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="" class="tab tab-3 ">
+                        <div class="status-tab__head">
+                            <p>데이터API</p>
+                            <i class="icon-inp-03"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-not-applied"></i>
+                                <p class="text-gray">미신청</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="" class="tab tab-4">
+                        <div class="status-tab__head">
+                            <p>기능API</p>
+                            <i class="icon-inp-04"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-wait"></i>
+                                <p class="text-dark">대기</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                </div>
                 <div class="content-body">
-                    <p class="content-body__title">
-
-                    </p>
-                    <p class="content-body__card">
-
-                    </p>
+                    <div class="content-body__title">
+                        인프라 신청내역
+                    </div>
+                    <div class="content-body__card">
+                        <div class="table-head">
+                            <div class="case">
+                                <p>전체 <span class="text-dark">1000</span> 건</p>
+                                <p>신청중 <span class="text-gray">12</span> 건</p>
+                                <p>대기 <span class="">12</span> 건</p>
+                                <p>승인 <span class="text-green">82</span> 건</p>
+                                <p>반려 <span class="text-danger">8</span> 건</p>
+                            </div>
+                            <div class="btn-group justify-content-center">
+                                <div class="input-form">
+                                    <div class="form">
+                                        <div class="custom-select" style="width: 80px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">10개씩</option>
+                                                <option value="">20개씩</option>
+                                                <option value="">30개씩</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <caption>서비스 신청 현황</caption>
+                            <colgroup>
+                                <col width="40%">
+                                <col width="13%">
+                                <col width="13%">
+                                <col width="13%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">서비스명</th>
+                                    <th rowspan="3" class="text-center">신청자명</th>
+                                    <th rowspan="3" class="text-center">신청상태</th>
+                                    <th rowspan="3" class="text-center">신청일</th>
+                                    <th colspan="3" class="text-center pt-20">처리상태</th>
+                                </tr>
+                                <tr>
+                                    <th class="sub-head">기능API</th>
+                                    <th class="sub-head">데이터API</th>
+                                    <th class="sub-head">인프라</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-primary">승인</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
+                                    <td class="text-center">승인</td>
+                                    <td class="text-center">2023-10-30</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-danger">반려</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
+                                    <td class="text-center">승인</td>
+                                    <td class="text-center">2023-10-30</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-dark">대기</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
+                                    <td class="text-center">승인</td>
+                                    <td class="text-center">2023-10-30</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-gray">신청중</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
+                                    <td class="text-center">-</td>
+                                    <td class="text-center">-</td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        @@include('@@webRoot/_include/_pagination.html')
+                    </div>
                 </div>
             </div>
         </div>

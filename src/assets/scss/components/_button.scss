@@ -88,3 +88,30 @@
 
 
 .btn-box {display: flex; flex-direction: column; gap: 20px;}
+
+
+.badge{
+  width: 52px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fff;
+  &.badge-primary{
+    border: solid 1px #03a27a;
+    color: #03a27a;
+  }
+  &.badge-danger{
+    border: solid 1px #ff453a;
+    color: #ff453a;
+  }
+  &.badge-dark{
+    border: solid 1px #313131;
+    color: #313131;
+  }
+  &.badge-gray{
+    border: solid 1px #d7d7d7;
+    color: #999;
+  }
+}

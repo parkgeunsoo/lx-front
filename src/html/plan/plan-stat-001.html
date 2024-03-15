@@ -11,6 +11,29 @@
         <div class="content">
             <div class="sub-visual plan">
                 <p class="title">신청현황</p>
+
+                <div class="filter">
+                    <div class="custom-select">
+                        <select name="" id="" class="form-select">
+                            <option value="">상태</option>
+                            <option value="">-</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="" id="" class="form-select">
+                            <option value="">신청일</option>
+                            <option value="">-</option>
+                        </select>
+                    </div>
+                    <div class="date-range">
+                        <input type="text" id="daterange" name="daterange" data-picker="date" />
+                        <!-- <input type="text" class="form-control" placeholder="YYYY-MM-DD" data-picker="date" /> -->
+                    </div>
+                    <div class="search-btn">
+                        <input type="text" class="form-control" value="" placeholder="신청자명, 서비스명으로 검색하세요" />
+                        <button type="button"><i class="icon-search-btn"></i></button>
+                    </div>
+                </div>
             </div>
             <div class="main-container">
                 <div class="content-body">
@@ -64,25 +87,100 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>지도상 주요시 길 검색 기능 서비스 개발</td>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-primary">승인</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
                                     <td class="text-center">강효두</td>
                                     <td class="text-center">승인</td>
                                     <td class="text-center">2023-10-30</td>
-                                    <td class="text-center">미신청</td>
-                                    <td class="text-center">승인</td>
-                                    <td class="text-center">승인</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>건물의 윤곽 표시 및 상세 설명 표시에 대한 이정표 개발</td>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-danger">반려</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
                                     <td class="text-center">강효두</td>
-                                    <td class="text-center">반려</td>
+                                    <td class="text-center">승인</td>
                                     <td class="text-center">2023-10-30</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-dark">대기</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
                                     <td class="text-center">승인</td>
-                                    <td class="text-center">반려</td>
-                                    <td class="text-center">승인</td>
+                                    <td class="text-center">2023-10-30</td>
+                                    <td class="text-center">
+                                        <span class="text-gray">미신청</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-green">승인</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-desc">
+                                            <div class="info">
+                                                <span class="badge badge-gray">신청중</span>
+                                                <span class="date">2023-10-30</span>
+                                            </div>
+                                            지도상 주요시 길 검색 기능 서비스 개발
+                                        </div>
+                                    </td>
+                                    <td class="text-center">강효두</td>
+                                    <td class="text-center">-</td>
+                                    <td class="text-center">-</td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
+                                    <td class="text-center">
+                                        -
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
+                        @@include('@@webRoot/_include/_pagination.html')
                     </div>
                 </div>
             </div>

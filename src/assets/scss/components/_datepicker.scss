@@ -140,3 +140,14 @@ select.mtz-monthpicker {
   background: #009881 !important;
   border-radius: 0 !important;
 }
+
+.date-range{
+  width: 260px;
+  font-size: 14.5px; color: #222;
+  &.auto{
+    width: auto;
+  }
+  [data-picker=date]{
+    width: 100%; border: 0; padding: 0 20px;
+  }
+}

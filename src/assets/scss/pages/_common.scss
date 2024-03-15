@@ -575,51 +575,7 @@
   margin-top: 14px;
 }
 
-.badge {
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 24px;
-  border-radius: 15px;
 
-  &.w-auto {
-    width: auto;
-    padding: 0 15px;
-  }
-
-  &.badge-dark {
-    background-color: #0c2340;
-  }
-
-  &.badge-blue {
-    background-color: #4285f4;
-  }
-
-  &.badge-green {
-    background-color: #009881;
-  }
-
-  &.badge-danger {
-    background-color: #fe3b30;
-  }
-
-  &.badge-orange {
-    background-color: #f06314;
-  }
-
-  &.badge-purple {
-    background-color: #6f43d6;
-  }
-
-  &.badge-lg {
-    height: 30px;
-    font-size: 15px;
-  }
-}
 
 .nav-tabs {
   margin-top: 40px;
