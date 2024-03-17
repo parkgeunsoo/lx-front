@@ -26,84 +26,21 @@
     object-fit: cover;
   }
 }
-
 .btn-group {
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 34px;
 }
-
-.table-head {
+.foot-btn-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-
-  &.border-head {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #000;
-  }
-
-  .text-green {
-    color: $green;
-  }
-
-  .btn-group {
-    margin-top: 0;
-  }
-
-  .case {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-
-    p {
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1px;
-        height: 100%;
-        background-color: #ebebeb;
-        left: -16px;
-      }
-
-      &:first-child {
-        &::before {
-          content: none;
-        }
-      }
-    }
-
-    &.border-case {
-      .form-check-label {
-        font-size: 16px;
-        margin-left: 10px;
-        color: #999;
-      }
-
-      p {
-        position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 1px;
-          height: 11px;
-          background-color: #cbced2;
-          left: -16px;
-        }
-      }
-    }
-  }
+  justify-content: end;
+  gap: 10px;
+  margin-top: 34px;
+  padding-top: 34px;
+  border-top:  1px solid #ddd;
 }
 
 .ag-grid {
@@ -456,6 +393,9 @@
 .mt-30 {
   margin-top: 30px !important;
 }
+.mt-35 {
+  margin-top: 35px !important;
+}
 
 .mt-40 {
   margin-top: 40px !important;
@@ -691,5 +631,11 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.form-label{
+  p{
+    font-size: 15px; font-weight: 500; color: #222; margin-bottom: 14px;
   }
 }

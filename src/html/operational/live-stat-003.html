@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="content">
+            <div class="sub-visual plan">
+                <p class="title">신청현황</p>
+            </div>
+            <div class="main-container">
+                <div class="content-body">
+                    <div class="content-body__title">
+                        신청정보
+                    </div>
+                    <div class="content-body__card detail-page">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-label">
+                                    <p>신청번호</p>
+                                    <input type="text" class="form-control" placeholder="" value="20231212-114">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-label">
+                                    <p>지자체구분</p>
+                                    <input type="text" class="form-control" placeholder="" value="충청북도 청주시 청주도서관">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>서비스명</p>
+                                    <input type="text" class="form-control" placeholder="" value="20231212-114">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-label">
+                                    <p>아이디</p>
+                                    <input type="text" class="form-control" placeholder="" value="sigunTest4_4470000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>GIT주소(web)</p>
+                                    <input type="text" class="form-control" placeholder=""
+                                        value="$ git remote set-url origin https://github.com/xpressengine/xpressengine.git">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-label">
+                                    <p>버전</p>
+                                    <div class="custom-select" style="width: 140px">
+                                        <select name="" id="" class="form-select ">
+                                            <option value="">2.0</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>Test URL</p>
+                                    <input type="text" class="form-control" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>변경DB스키마정보</p>
+                                    <div class="form-file-custom">
+                                        <p id="selectedFile" class="file-name mb-0" style="width: 100%"></p>
+                                        <label for="fileInput" id="fileLabel" class="fileLabel round">파일 찾기</label>
+                                        <input type="file" id="fileInput" style="display: none" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>추가요청사항</p>
+                                    <div class="form-file-custom">
+                                        <p id="selectedFile" class="file-name mb-0" style="width: 100%"></p>
+                                        <label for="fileInput" id="fileLabel" class="fileLabel round">파일 찾기</label>
+                                        <input type="file" id="fileInput" style="display: none" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-label">
+                                    <p>요청사항설명</p>
+                                    <textarea name="" class="form-control" style="height: 100px"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group justify-content-center">
+                            <button type="button" class="btn btn-min btn-auto btn-green round btn-lg">신청하기</button>
+                            <button type="button"
+                                class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('@@webRoot/_include/_footer.html')
+    </div>
+</body>
+
+</html>

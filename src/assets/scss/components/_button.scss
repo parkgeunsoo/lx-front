@@ -8,7 +8,7 @@
   vertical-align: middle;
   user-select: none;
   background-color: #000;
-  padding: 14px 18px 13px;
+  padding: 8px 20px;
   font-size: 15px;
   line-height: 1;
   cursor: pointer;
@@ -16,10 +16,12 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   &.btn-auto{
     width: auto;
-    padding: 0;
   }
   &.btn-min{
     min-width: 80px;
+  }
+  &.btn-lg{
+    height: 50px;
   }
   &.btn-md{
     padding: 12px 18px;
@@ -29,7 +31,7 @@
     font-size: 14px;
   }
   &.round{
-    border-radius: 60px;
+    border-radius: 25px;
   }
   &.min-width{
     min-width: 140px;
@@ -83,6 +85,10 @@
     background-color: #cceae6 !important;
     border: 1px solid #cceae6 !important;
     color: #009881 !important;
+  }
+  &:disabled{
+    background-color: #ebebeb !important;
+    color: #999 !important;
   }
 }
 

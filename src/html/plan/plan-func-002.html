@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="content">
+            <div class="sub-visual plan">
+                <p class="title">신청현황</p>
+            </div>
+            <div class="main-container">
+                <div class="status-color">
+                    <p>상태 색상 : </p>
+                    <div class="badge-list">
+                        <span class="badge badge-primary">승인</span>
+                        <span class="badge badge-danger">반려</span>
+                        <span class="badge badge-dark">대기</span>
+                        <span class="badge badge-gray">미신청</span>
+                    </div>
+                </div>
+                <div class="status-tab">
+                    <a href="@@webRoot/html/plan/plan-inp-001.html" class="tab tab-1 success">
+                        <div class="status-tab__head">
+                            <p>최종승인</p>
+                            <i class="icon-inp-01"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-approval"></i>
+                                <p class="text-green">승인</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-inp-001.html" class="tab tab-2 ">
+                        <div class="status-tab__head">
+                            <p>인프라</p>
+                            <i class="icon-inp-02"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-companion"></i>
+                                <p class="text-danger">반려</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-data-001.html" class="tab tab-3 ">
+                        <div class="status-tab__head">
+                            <p>데이터API</p>
+                            <i class="icon-inp-03"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-not-applied"></i>
+                                <p class="text-gray">미신청</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-func-002.html" class="tab tab-4 active">
+                        <div class="status-tab__head">
+                            <p>기능API</p>
+                            <i class="icon-inp-04"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-wait"></i>
+                                <p class="text-dark">대기</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-body">
+                    <div class="content-body__title">
+                        기능API 신청내역
+                    </div>
+                    <div class="content-body__card">
+                        <div class="table-head">
+                            <div class="case">
+                                <p>전체 <span class="text-dark">0</span> 건</p>
+                                <p>사용 <span class="text-green">0</span> 건</p>
+                                <p>제한 <span class="text-danger">0</span> 건</p>
+                                <p class="text-green">* 제한 상태의 API는 사용할 수 없습니다.</p>
+                            </div>
+                            <div class="btn-group justify-content-center">
+                                <div class="custom-select" style="width: 110px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">10개씩</option>
+                                        <option value="">20개씩</option>
+                                        <option value="">30개씩</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-gray btn-auto round" disabled>미신청</button>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <caption>서비스 신청 현황</caption>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="40%">
+                                <col width="10%">
+                                <col width="15%">
+                                <col width="10%">
+                                <col width="15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th class="text-center">
+                                        서비스명
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">포맷 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">신청일 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">상태 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        제한사유
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @@for( i=1; i < 10; i++ ){ <tr>
+                                    <td class="text-center">
+                                        국토 도로
+                                    </td>
+                                    <td class="text-center">
+                                        한국등산 트레킹지원센터_9정맥 종주길
+                                    </td>
+                                    <td class="text-center">
+                                        JSON+XML
+                                    </td>
+                                    <td class="text-center">
+                                        2023-10-28
+                                    </td>
+                                    <td class="text-center">
+                                        사용
+                                    </td>
+                                    <td class="text-center">
+                                        정부지침으로 삭제된 API
+                                    </td>
+                                    </tr>
+                                    }
+                            </tbody>
+                        </table>
+                        @@include('@@webRoot/_include/_pagination.html')
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-body__card">
+                        <div class="filter">
+                            <div class="custom-select">
+                                <select name="" id="" class="form-select">
+                                    <option value="">구분</option>
+                                    <option value="">-</option>
+                                </select>
+                            </div>
+                            <div class="search-btn">
+                                <input type="text" class="form-control" value="" placeholder="그룹명, 기능명, API명으로 검색하세요">
+                                <button type="button"><i class="icon-search-btn"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="api-wrap">
+                                    <div class="api-wrap__head">
+                                        <div class="input-form gap-25">
+                                            <div class="custom-select" style="width: 110px">
+                                                <select name="" id="" class="form-select round">
+                                                    <option value="">10개씩</option>
+                                                </select>
+                                            </div>
+                                            <p class="text-green">* 선택 담기를 누르면 오른쪽 리스트에 추가됩니다.
+                                            </p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-dark btn-auto round">선택 담기</button>
+                                    </div>
+                                    <div class="api-wrap__list">
+                                        <div class="api-list__head">
+                                            <div class="cell width-25">분류</div>
+                                            <div class="cell width-75 text-center">서비스명</div>
+                                        </div>
+                                        <div class="api-list__content">
+                                            <div class="slide-box">
+                                                <div class="api-list__title">
+                                                    <div class="cell width-25">국토 도로</div>
+                                                    <div class="cell flex-cell width-75">
+                                                        <p>한국등산 트레킹지원센터_9정맥 종주길한국등산
+                                                        </p>
+                                                        <i class="icon-accordion-off"></i>
+                                                    </div>
+                                                </div>
+                                                <ul class="api-list__desc">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck1" autocomplete="off" />
+                                                        </div>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="" class="text-green text-underline">Swagger</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck2" autocomplete="off" />
+                                                        </div>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="" class="text-green text-underline">Swagger</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slide-box">
+                                                <div class="api-list__title">
+                                                    <div class="cell width-25">국토 도로</div>
+                                                    <div class="cell flex-cell width-75">
+                                                        <p>한국등산 트레킹지원센터_9정맥 종주길한국등산
+                                                        </p>
+                                                        <i class="icon-accordion-off"></i>
+                                                    </div>
+                                                </div>
+                                                <ul class="api-list__desc">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck1" autocomplete="off" />
+                                                        </div>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="" class="text-green text-underline">Swagger</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck2" autocomplete="off" />
+                                                        </div>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="" class="text-green text-underline">Swagger</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="api-wrap-footer">
+                                    <a href="javascript:void(0)" class="more">
+                                        <p>더보기 (<span>25</span>/311)</p>
+                                        <span class="arrow"><i class="icon-w-arrow-bottom"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="api-wrap">
+                                    <div class="api-wrap__head">
+                                        <p class="title">선택한 API</p>
+                                        <p class="cnt">선택<span>7건</span></p>
+                                    </div>
+                                    <div class="api-wrap__list">
+                                        <div class="api-result__content">
+                                            <div class="api-check-list">
+                                                <div class="api-result__title">
+                                                    <div class="cell">경상북도 경주시_걷기길 정보 </div>
+                                                    <div class="cell">
+                                                        <a href="javascript:void(0)" class="content-close"><i
+                                                                class="icon-b-close"></i></a>
+                                                    </div>
+                                                </div>
+                                                <ul class="api-result__desc">
+                                                    <li>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="javascript:void(0)"
+                                                            class="text-green text-underline list-close"><i
+                                                                class="icon-g-close"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="desc">http://api.wexample.com/ device-management /
+                                                            Managed-devices
+                                                        </p>
+                                                        <a href="javascript:void(0)"
+                                                            class="text-green text-underline list-close"><i
+                                                                class="icon-g-close"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="api-wrap-footer">
+                                    <button type="button"
+                                        class="btn btn-min btn-auto btn-green round btn-lg">수정하기</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="foot-btn-group justify-content-center">
+                            <button type="button"
+                                class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('@@webRoot/_include/_footer.html')
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.slide-box').click(function () {
+                $(this).find('.api-list__desc').slideToggle(350);
+                $(this).toggleClass('active');
+            })
+
+            $('.content-close').click(function () {
+                $('.api-check-list').remove();
+            })
+            $('.list-close').click(function () {
+                $(this).parent().remove();
+            })
+        })
+    </script>
+</body>
+
+</html>
