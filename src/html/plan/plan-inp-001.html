@@ -95,57 +95,72 @@
                                         <option value="">30개씩</option>
                                     </select>
                                 </div>
+                                <div class="custom-select" style="width: 110px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">최신순</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
                                 <button type="button" class="btn btn-outline-green btn-auto round">미신청</button>
                             </div>
                         </div>
                         <table class="table">
                             <caption>서비스 신청 현황</caption>
                             <colgroup>
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
                                 <col width="10%">
-                                <col width="10%">
-                                <col width="22%">
-                                <col width="22%">
-                                <col width="22%">
-                                <col width="10%">
+                                <col width="15%">
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th rowspan="3">구분</th>
-                                    <th rowspan="3" class="text-center">
+                                    <th class="text-center">
                                         <div class="sort">상품명 <i class="icon-select-off"></i></div>
                                     </th>
-                                    <th colspan="3" class="text-center">개발서버/운영서버</th>
-                                    <th rowspan="3" class="text-center">
+                                    <th class="text-center">
+                                        <div class="sort">구분 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">요금 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">추가서비스 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="sort">신청자 <i class="icon-select-off"></i></div>
+                                    </th>
+                                    <th class="text-center">
                                         <div class="sort">신청일 <i class="icon-select-off"></i></div>
                                     </th>
+                                    <th class="text-center">상세</th>
                                 </tr>
-                                <tr>
-                                    <th class="sub-head">WEB</th>
-                                    <th class="sub-head">API</th>
-                                    <th class="sub-head">DB</th>
-                                </tr>
+
 
                             </thead>
                             <tbody>
                                 @@for( i=1; i < 10; i++){ <tr>
-                                    <td>
-                                        2D사용자포탈
-                                    </td>
                                     <td class="text-center">기본상품 - 01</td>
                                     <td class="text-center">
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
+                                        운영/개발
                                     </td>
                                     <td class="text-center">
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
+                                        10,000,000
                                     </td>
                                     <td class="text-center">
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
-                                        <p>CPU 8 Core / RAM 16GB / SSD 50GB</p>
+                                        <span class="text-green">O</span>
+                                    </td>
+                                    <td class="text-center">
+                                        강효두
                                     </td>
                                     <td class="text-center">
                                         2023-10-28
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="" class="text-green text-underline">보기</a>
                                     </td>
                                     </tr>
                                     }
@@ -158,120 +173,313 @@
                     <div class="content-body__title">
                         인프라 신청
                     </div>
-                    <div class="content-body__card">
-                        <div class="form-label">
-                            <p>상품선택</p>
-                            <div class="input-form gap-10">
-                                <div class="custom-select" style="width: 200px">
-                                    <select name="" id="" class="form-select round">
-                                        <option value="">기본 상품 01</option>
-                                    </select>
+                    <div class="content-body__card price">
+                        <div class="estimated-price">
+                            <div class="left-content">
+                                <div class="price">
+                                    <i class="icon-price"></i>
+                                    <p>예상요금</p>
                                 </div>
-                                <div class="custom-select" style="width: 140px">
-                                    <select name="" id="" class="form-select round">
-                                        <option value="">선택안함</option>
-                                    </select>
-                                </div>
+                                <p class="exe">
+                                    <i class="icon-date"></i>
+                                    예상요금은 1년 계약 기준입니다.
+                                </p>
+                            </div>
+                            <div class="right-content ">
+                                <button type="button">10,635,000원</button>
+                                <p>
+                                    <i class="icon-print"></i>
+                                    출력
+                                </p>
                             </div>
                         </div>
-                        <div class="table-wrap">
-                            <table class="table table-row">
-                                <caption>서비스 신청 현황</caption>
-                                <colgroup>
-                                    <col width="160px">
-                                    <col width="160px">
-                                    <col width="160px">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th rowspan="9">
-                                            <p class="br-text">기본상품 01</p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col" rowspan="4">개발서버</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">WEB</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">API</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">DB</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col" rowspan="4">운영서버</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">WEB</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">API</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="row-col">DB</th>
-                                        <td colspan="4">
-                                            CPU 8 Core / RAM 16GB / SSD 50GB
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    </div>
+                    <div class="content-body__card mt-40 p-0">
+                        <div class="card-head">
+                            <p class="card-head__title">상품선택</p>
+                            <p class="card-head__desc">*세트 상품구성이 기본이나, 운영 / 개발을 체크하여 1개도 신청 가능합니다.</p>
                         </div>
-                        <div class="row mt-35">
-                            <div class="col-6">
-                                <div class="form-label">
-                                    <p>상품선택</p>
-                                    <div class="input-form gap-10">
-                                        <div class="custom-select" style="width: 200px">
+                        <div class="slide-select">
+                            <div class="swiper product-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide active">
+                                        <button type="button" class="btn round">기본 인프라-01
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">소규모 적합형
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <button type="button" class="btn round">기본상품1
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="select-content">
+                                <div class="select-content__head">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1"
+                                            autocomplete="off" />
+                                        <label class="form-check-label" for="btncheck1"><i class="icon-inp-1"></i>
+                                            운영</label>
+                                    </div>
+                                </div>
+                                <ul class="select-content__body">
+                                    @@for( i=1; i < 5; i++){ <li>
+                                        <input type="text" class="form-control" style="width: 140px" value="WEB">
+                                        <input type="text" class="form-control" style="width: 140px" value="Compute">
+                                        <input type="text" class="form-control" style="width: 140px" value="Server">
+                                        <div class="custom-select" style="width: 140px">
                                             <select name="" id="" class="form-select">
-                                                <option value="">NAS</option>
+                                                <option value="">Standard-1</option>
                                             </select>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="" value=""
-                                            style="width:285px" />
-                                        <button type="button" class="btn btn-dark btn-auto round">추가</button>
+                                        <input type="text" class="form-control" style="width: 288px"
+                                            value="vCPU 2Core  / RAM 16GB  / HDD 50GB">
+                                        <div class="custom-select" style="width: 71px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="price-input active">
+                                            <input type="number" class="form-control " value="139000">
+                                            <p>원</p>
+                                        </div>
+                                        </li>
+                                        }
+                                        <li>
+                                            <input type="text" class="form-control" style="width: 140px" value="WEB">
+                                            <input type="text" class="form-control" style="width: 140px"
+                                                value="Compute">
+                                            <input type="text" class="form-control" style="width: 140px" value="Server">
+                                            <div class="custom-select" style="width: 140px">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">Standard-1</option>
+                                                </select>
+                                            </div>
+                                            <input type="text" class="form-control" style="width: 288px"
+                                                value="vCPU 2Core  / RAM 16GB  / HDD 50GB">
+                                            <div class="custom-select" style="width: 71px">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">1</option>
+                                                </select>
+                                            </div>
+                                            <div class="price-input">
+                                                <input type="number" class="form-control " value="0">
+                                                <p>원</p>
+                                            </div>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="select-content">
+                                <div class="select-content__head">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1"
+                                            autocomplete="off" />
+                                        <label class="form-check-label" for="btncheck1"><i class="icon-inp-2"></i>
+                                            개발</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-label">
-                                    <p>아이디</p>
-                                    <div class="input-form align-items-center gap-10">
-                                        <input type="text" class="form-control" placeholder="" value=""
-                                            style="width:240px" />
-                                        <div class="text-green">GitLab.com에서 사용하는 아이디를 입력해주세요.</div>
-                                    </div>
-                                </div>
+                                <ul class="select-content__body">
+                                    @@for( i=1; i < 5; i++){ <li>
+                                        <input type="text" class="form-control" style="width: 140px" value="WEB">
+                                        <input type="text" class="form-control" style="width: 140px" value="Compute">
+                                        <input type="text" class="form-control" style="width: 140px" value="Server">
+                                        <div class="custom-select" style="width: 140px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Standard-1</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" style="width: 288px"
+                                            value="vCPU 2Core  / RAM 16GB  / HDD 50GB">
+                                        <div class="custom-select" style="width: 71px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="price-input active">
+                                            <input type="number" class="form-control " value="139000">
+                                            <p>원</p>
+                                        </div>
+                                        </li>
+                                        }
+                                        <li>
+                                            <input type="text" class="form-control" style="width: 140px" value="WEB">
+                                            <input type="text" class="form-control" style="width: 140px"
+                                                value="Compute">
+                                            <input type="text" class="form-control" style="width: 140px" value="Server">
+                                            <div class="custom-select" style="width: 140px">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">Standard-1</option>
+                                                </select>
+                                            </div>
+                                            <input type="text" class="form-control" style="width: 288px"
+                                                value="vCPU 2Core  / RAM 16GB  / HDD 50GB">
+                                            <div class="custom-select" style="width: 71px">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">1</option>
+                                                </select>
+                                            </div>
+                                            <div class="price-input">
+                                                <input type="number" class="form-control " value="0">
+                                                <p>원</p>
+                                            </div>
+                                        </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="foot-btn-group justify-content-center">
-                            <button type="button" class="btn btn-min btn-auto btn-green round btn-lg">신청하기</button>
-                            <button type="button"
-                                class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
+                    </div>
+                    <div class="content-body__card mt-40 p-0">
+                        <div class="card-head">
+                            <p class="card-head__title">추가 서비스 선택</p>
+                            <p class="card-head__desc">* 필요한 추가 서비스를 직접 선택하여 신청할 수 있습니다.</p>
                         </div>
+                        <div class="card-content">
+                            <div class="service-content">
+                                <ul class="service-content__body">
+                                    <li>
+                                        <input type="text" class="form-control" style="width: 141px" value=""
+                                            placeholder="이름입력">
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">대분류선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">중분류선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">소분류명 선택</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" style="width: 289px" value=""
+                                            placeholder="소분류 스펙 노출">
+                                        <div class="custom-select" style="width: 71px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="price-input ">
+                                            <input type="number" class="form-control " value="0">
+                                            <p>원</p>
+                                        </div>
+                                        <button type="button" class="btns-sign"><i class="icon-minus"></i></button>
+                                    </li>
+                                    <li>
+                                        <input type="text" class="form-control" style="width: 141px" value=""
+                                            placeholder="이름입력">
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">대분류선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">중분류선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="custom-select" style="width: 141px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">소분류명 선택</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" style="width: 289px" value=""
+                                            placeholder="소분류 스펙 노출">
+                                        <div class="custom-select" style="width: 71px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="price-input active">
+                                            <input type="number" class="form-control " value="1398000">
+                                            <p>원</p>
+                                        </div>
+                                        <button type="button" class="btns-sign"><i class="icon-minus"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body__title note">
+                        비고
+                    </div>
+                    <div class="content-body__card">
+
+                    </div>
+                    <div class="btn-group justify-content-center">
+                        <button type="button" class="btn btn-min btn-auto btn-green round btn-lg">신청하기</button>
+                        <button type="button" class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
                     </div>
                 </div>
             </div>
         </div>
         @@include('@@webRoot/_include/_footer.html')
     </div>
-
+    <script>
+        var swiper = new Swiper('.product-swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 5,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        $('.swiper-slide').click(function () {
+            $(this).toggleClass('active');
+        })
+    </script>
 </body>
 
 </html>
