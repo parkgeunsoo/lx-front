@@ -16,6 +16,14 @@
   .table-scroll {
     overflow: auto;
   }
+  &.lg-pd{
+    th{
+      padding:33px 20px;
+    }
+    td{
+      padding: 38px 15px;
+    }
+  }
   thead {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
