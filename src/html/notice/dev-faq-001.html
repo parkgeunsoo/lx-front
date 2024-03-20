@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="content">
+            <div class="sub-visual notice">
+                <p class="title">FAQ</p>
+
+                <div class="filter">
+                    <div class="search-btn w-100">
+                        <input type="text" class="form-control border-0" value="" placeholder="검색어를 검색해주세요" />
+                        <button type="button"><i class="icon-search-btn"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="content-body">
+                    <div class="content-body__card">
+                        <div class="table-head">
+                            <div class="case">
+                                <p>전체 <span class="text-dark">80</span> 건</p>
+                            </div>
+                            <div class="btn-group justify-content-center">
+                                <div class="input-form gap-10">
+                                    <div class="form">
+                                        <div class="custom-select" style="width: 110px">
+                                            <select name="" id="" class="form-select round">
+                                                <option value="">10개씩</option>
+                                                <option value="">20개씩</option>
+                                                <option value="">30개씩</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table notice">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="85%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="accordion-head">
+                                    <td>
+                                        가입
+                                    </td>
+                                    <td class="">
+                                        Q. 운영배포 승인 결과는 어디서 볼 수 있나요?
+                                    </td>
+                                </tr>
+                                <tr class="accordion-content">
+                                    <td>
+                                    </td>
+                                    <td class="">
+                                        <p>비밀번호를 분실하신 경우에는 로그인 입력 하단에 있는 고객센터에 직접 전화하여 문의 주세요.</p>
+                                        <p>
+                                            비밀번호가 초기화되며, SMS 활성으로 선택되어 있는 경우에는 비밀번호가 SMS로 전송됩니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="accordion-head">
+                                    <td>
+                                        서비스신청
+                                    </td>
+                                    <td class="">
+                                        Q. 개발계획신청을 했는데 승인이 나지 않아요?
+                                    </td>
+                                </tr>
+                                <tr class="accordion-content">
+                                    <td>
+                                    </td>
+                                    <td class="">
+                                        <p>비밀번호를 분실하신 경우에는 로그인 입력 하단에 있는 고객센터에 직접 전화하여 문의 주세요.</p>
+                                        <p>
+                                            비밀번호가 초기화되며, SMS 활성으로 선택되어 있는 경우에는 비밀번호가 SMS로 전송됩니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        @@include('@@webRoot/_include/_pagination.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('@@webRoot/_include/_footer.html')
+    </div>
+    <script>
+        $('.accordion-head').click(function () {
+            $(this).next('.accordion-content').slideToggle(350);
+            $(this).toggleClass('active');
+        })
+    </script>
+</body>
+
+</html>
