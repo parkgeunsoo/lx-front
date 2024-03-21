@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="content">
+            <div class="sub-visual plan">
+                <p class="title">신청현황</p>
+            </div>
+            <div class="main-container">
+                <div class="status-color">
+                    <p>상태 색상 : </p>
+                    <div class="badge-list">
+                        <span class="badge badge-primary">승인</span>
+                        <span class="badge badge-danger">반려</span>
+                        <span class="badge badge-dark">대기</span>
+                        <span class="badge badge-gray">미신청</span>
+                    </div>
+                </div>
+                <div class="status-tab">
+                    <a href="@@webRoot/html/plan/plan-001.html" class="tab tab-1 success active">
+                        <div class="status-tab__head">
+                            <p>최종승인</p>
+                            <i class="icon-inp-01"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-approval"></i>
+                                <p class="text-green">승인</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-inp-001.html" class="tab tab-2 ">
+                        <div class="status-tab__head">
+                            <p>인프라</p>
+                            <i class="icon-inp-02"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-companion"></i>
+                                <p class="text-danger">반려</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-data-001.html" class="tab tab-3 ">
+                        <div class="status-tab__head">
+                            <p>데이터API</p>
+                            <i class="icon-inp-03"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-not-applied"></i>
+                                <p class="text-gray">미신청</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                    <a href="@@webRoot/html/plan/plan-func-002.html" class="tab tab-4">
+                        <div class="status-tab__head">
+                            <p>기능API</p>
+                            <i class="icon-inp-04"></i>
+                        </div>
+                        <div class="status-tab__content">
+                            <div class="check">
+                                <i class="icon-state-wait"></i>
+                                <p class="text-dark">대기</p>
+                            </div>
+                            <div class="date">2023-10-30</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-body">
+                    <div class="content-body__title">
+                        신청현황
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table table-row">
+                            <colgroup>
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청번호</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">사용</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th scope="row">구분</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">JSON</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th scope="row">유형</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">JSON</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">서비스명</th>
+                                    <td><input type="text" class="form-control" colspan="3" style="width: 440px" placeholder="API 이름을 입력하세요.  영문, 한글 20자 이하" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청자</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">사용</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th scope="row">신청일</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">JSON</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-body__title">
+                        처리현황
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table table-row">
+                            <colgroup>
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                                <col width="16%" />
+                            </colgroup>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">최종승인</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">사용</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th scope="row">승인(반려)일</th>
+                                    <td>
+                                        <div class="custom-select" style="width: 160px">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">JSON</option>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">반려사유</th>
+                                    <td><input type="text" class="form-control" colspan="3" style="width: 440px" placeholder="API 이름을 입력하세요.  영문, 한글 20자 이하" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Test URL</th>
+                                    <td><input type="text" class="form-control" colspan="3" style="width: 440px" placeholder="API 이름을 입력하세요.  영문, 한글 20자 이하" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('@@webRoot/_include/_footer.html')
+    </div>
+    <script>
+        var swiper = new Swiper('.product-swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 5,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        $('.swiper-slide').click(function () {
+            $(this).toggleClass('active');
+        })
+    </script>
+</body>
+
+</html>
