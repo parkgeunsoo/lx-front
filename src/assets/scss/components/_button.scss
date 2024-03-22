@@ -114,6 +114,10 @@
   &.badge-primary {
     border: solid 1px #03a27a;
     color: #03a27a;
+    &.full{
+      background-color: #03a27a;
+      color: #fff;
+    }
   }
   &.badge-danger {
     border: solid 1px #ff453a;
