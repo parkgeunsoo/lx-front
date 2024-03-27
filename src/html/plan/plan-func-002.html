@@ -102,8 +102,9 @@
                         <table class="table">
 
                             <colgroup>
+                                <col width="5%">
                                 <col width="10%">
-                                <col width="40%">
+                                <col width="35%">
                                 <col width="10%">
                                 <col width="15%">
                                 <col width="10%">
@@ -111,7 +112,12 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>분류</th>
+                                    <th class="text-center">
+                                        <div class="form-check p-0">
+                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                                        </div>
+                                    </th>
+                                    <th class="text-center">분류</th>
                                     <th class="text-center">
                                         서비스명
                                     </th>
@@ -131,6 +137,11 @@
                             </thead>
                             <tbody>
                                 @@for( i=1; i < 10; i++ ){ <tr>
+                                    <td class="text-center">
+                                        <div class="form-check justify-content-center p-0">
+                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                                        </div>
+                                    </td>
                                     <td class="text-center">
                                         국토 도로
                                     </td>
