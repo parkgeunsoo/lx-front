@@ -517,11 +517,19 @@
         .desc {
           color: #777;
         }
+      
         a {
           flex-shrink: 0;
         }
       }
     }
+   
+  }
+}
+.val{
+  display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+  p{
+    color: #777;
   }
 }
 
