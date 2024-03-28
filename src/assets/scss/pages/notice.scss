@@ -38,12 +38,14 @@
     font-weight: 500;
     font-size: 16px;
     color: #222;
+    line-height: 1.5;
   }
   .notice-content {
     margin: 60px 0;
     p {
       font-size: 16px;
       color: #222;
+      line-height: 1.5;
     }
   }
   .download-wrap {
@@ -109,6 +111,19 @@
       p {
         line-height: 1.63;
         color: #222;
+        font-family: "Pretendard" !important;
+        span {
+          font-family: "Pretendard" !important;
+        }
+        li {
+          font-family: "Pretendard" !important;
+        }
+        b {
+          font-family: "Pretendard" !important;
+        }
+        strong {
+          font-family: "Pretendard" !important;
+        }
       }
     }
   }
