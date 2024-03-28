@@ -9,76 +9,172 @@
     <div id="wrap">
         @@include('@@webRoot/_include/_header.html')
         <div class="content">
-            <div class="sub-visual notice">
-                <p class="title">자료실</p>
+            <div class="sub-visual guide">
+                <p class="title">가이드</p>
 
                 <div class="filter">
                     <div class="search-btn w-100">
-                        <input type="text" class="form-control border-0" value="" placeholder="제목으로 검색해주세요" />
+                        <input type="text" class="form-control border-0" value="" placeholder="검색어를 입력해주세요" />
                         <button type="button"><i class="icon-search-btn"></i></button>
                     </div>
                 </div>
             </div>
             <div class="main-container">
                 <div class="content-body">
-                    <div class="content-body__card">
-                        <div class="table-head">
-                            <div class="case">
-                                <p>전체 <span class="text-dark">23</span> 건</p>
+                    <div class="table-head border-head">
+                        <div class="case">
+                            <p>전체 <span class="text-dark">23</span> 건</p>
+                        </div>
+                        <div class="btn-group justify-content-center">
+                            <div class="form">
+                                <div class="custom-select" style="width: 161px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">플랫폼 이용</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="btn-group justify-content-center">
-                                <div class="input-form gap-10">
-                                    <div class="form">
-                                        <div class="custom-select" style="width: 110px">
-                                            <select name="" id="" class="form-select round">
-                                                <option value="">최신순</option>
-                                                <option value="">오래된순</option>
-                                                <option value="">조회수순</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form">
-                                        <div class="custom-select" style="width: 110px">
-                                            <select name="" id="" class="form-select round">
-                                                <option value="">10개씩</option>
-                                                <option value="">20개씩</option>
-                                                <option value="">30개씩</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                            <div class="form">
+                                <div class="custom-select" style="width: 110px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">최신순</option>
+                                        <option value="">오래된순</option>
+                                        <option value="">조회수순</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="custom-select" style="width: 110px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">10개씩</option>
+                                        <option value="">20개씩</option>
+                                        <option value="">30개씩</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="guide-wrap">
-                            <div class="guide-list">
-                                <div class="guide-content">
-                                    <div class="guide-content__body">
-                                        <span class="badge badge-primary full w-auto badge-lg">개발</span>
-                                        <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
-                                        <div class="desc">
-                                            <p>
-                                                <i class="icon-download"></i>
-                                                <span>17</span>
-                                            </p>
-                                            <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btns download">
-                                            <i class="icon-img-download"></i>
-                                            <span>다운로드</span>
-                                        </button>
-                                        <button type="button" class="btns view" style="border-left: 1px solid #ddd">
-                                            <i class="icon-img-view"></i>
-                                            <span>바로보기</span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        @@include('@@webRoot/_include/_pagination.html')
                     </div>
+                    <div class="guide-wrap">
+                        <div class="guide-list">
+                            <div class="guide-content">
+                                <div class="guide-content__body">
+                                    <span class="badge badge-primary full w-auto badge-lg">개발</span>
+                                    <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
+                                    <div class="desc">
+                                        <p>
+                                            <i class="icon-download"></i>
+                                            <span>17</span>
+                                        </p>
+                                        <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btns download">
+                                        <i class="icon-img-download"></i>
+                                        <span>다운로드</span>
+                                    </button>
+                                    <button type="button" class="btns view" style="border-left: 1px solid #ddd">
+                                        <i class="icon-img-view"></i>
+                                        <span>바로보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="guide-content">
+                                <div class="guide-content__body">
+                                    <span class="badge badge-primary full w-auto badge-lg">개발</span>
+                                    <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
+                                    <div class="desc">
+                                        <p>
+                                            <i class="icon-download"></i>
+                                            <span>17</span>
+                                        </p>
+                                        <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btns download">
+                                        <i class="icon-img-download"></i>
+                                        <span>다운로드</span>
+                                    </button>
+                                    <button type="button" class="btns view" style="border-left: 1px solid #ddd">
+                                        <i class="icon-img-view"></i>
+                                        <span>바로보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="guide-content">
+                                <div class="guide-content__body">
+                                    <span class="badge badge-primary full w-auto badge-lg">플랫폼 이용</span>
+                                    <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
+                                    <div class="desc">
+                                        <p>
+                                            <i class="icon-download"></i>
+                                            <span>17</span>
+                                        </p>
+                                        <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btns download">
+                                        <i class="icon-img-download"></i>
+                                        <span>다운로드</span>
+                                    </button>
+                                    <button type="button" class="btns view" style="border-left: 1px solid #ddd">
+                                        <i class="icon-img-view"></i>
+                                        <span>바로보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="guide-content">
+                                <div class="guide-content__body">
+                                    <span class="badge badge-primary full w-auto badge-lg">개발환경구성</span>
+                                    <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
+                                    <div class="desc">
+                                        <p>
+                                            <i class="icon-download"></i>
+                                            <span>17</span>
+                                        </p>
+                                        <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btns download">
+                                        <i class="icon-img-download"></i>
+                                        <span>다운로드</span>
+                                    </button>
+                                    <button type="button" class="btns view" style="border-left: 1px solid #ddd">
+                                        <i class="icon-img-view"></i>
+                                        <span>바로보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="guide-content">
+                                <div class="guide-content__body">
+                                    <span class="badge badge-primary full w-auto badge-lg">개발</span>
+                                    <a href="javascript:void(0)" class="move-link">개발가이드 2024</a>
+                                    <div class="desc">
+                                        <p>
+                                            <i class="icon-download"></i>
+                                            <span>17</span>
+                                        </p>
+                                        <p class="after"> <i class="icon-g-date"></i> 2023-10-30</p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btns download">
+                                        <i class="icon-img-download"></i>
+                                        <span>다운로드</span>
+                                    </button>
+                                    <button type="button" class="btns view" style="border-left: 1px solid #ddd">
+                                        <i class="icon-img-view"></i>
+                                        <span>바로보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @@include('@@webRoot/_include/_pagination.html')
                 </div>
             </div>
         </div>

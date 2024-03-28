@@ -20,6 +20,9 @@
   &.notice {
     background-image: url("../images/notice-visual.png");
   }
+  &.guide {
+    background-image: url("../images/guide-visual.png");
+  }
 }
 .filter {
   width: 980px;
@@ -108,40 +111,42 @@
       align-items: center;
       justify-content: space-between;
     }
-    .table-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      &.border-head {
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #000;
-      }
-      .btn-group {
-        margin-top: 0;
-      }
-      .case {
+    @at-root {
+      .table-head {
         display: flex;
         align-items: center;
-        gap: 20px;
-        p {
-          position: relative;
-          color: #555;
-          font-size: 15px;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 1px;
-            height: 11px;
-            background-color: #ebebeb;
-            left: -10px;
-          }
-          &:first-child {
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &.border-head {
+          margin-bottom: 30px;
+          padding-bottom: 14px;
+          border-bottom: 1px solid #000;
+        }
+        .btn-group {
+          margin-top: 0;
+        }
+        .case {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          p {
+            position: relative;
+            color: #555;
+            font-size: 15px;
             &::before {
-              content: none;
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 1px;
+              height: 11px;
+              background-color: #ebebeb;
+              left: -10px;
+            }
+            &:first-child {
+              &::before {
+                content: none;
+              }
             }
           }
         }
@@ -517,18 +522,20 @@
         .desc {
           color: #777;
         }
-      
+
         a {
           flex-shrink: 0;
         }
       }
     }
-   
   }
 }
-.val{
-  display: flex; align-items: center; gap: 12px; flex-shrink: 0;
-  p{
+.val {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  p {
     color: #777;
   }
 }

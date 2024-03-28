@@ -114,7 +114,7 @@
   &.badge-primary {
     border: solid 1px #03a27a;
     color: #03a27a;
-    &.full{
+    &.full {
       background-color: #03a27a;
       color: #fff;
     }
@@ -130,5 +130,10 @@
   &.badge-gray {
     border: solid 1px #d7d7d7;
     color: #999;
+  }
+  &.badge-lg {
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px 15px;
   }
 }
