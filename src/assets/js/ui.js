@@ -26,6 +26,8 @@ var Common = {
     //   dateFormat: "yy-mm-dd",
     // });
     $(function() {
+       // selectbox 커스텀
+   
       $('#daterange').daterangepicker({
         autoApply: true, // 범위를 선택하면 자동으로 적용되도록 설정
         opens: 'left', // 달력이 나타날 방향 지정

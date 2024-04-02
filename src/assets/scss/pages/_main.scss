@@ -15,10 +15,16 @@
   background-position: center;
   position: relative;
   border-radius: 16px;
+  @media screen and (min-width:1921px) {
+    height: 720px;
+  }
   .text-box {
     position: absolute;
     top: 87px;
     left: 140px;
+    @media screen and (min-width:1921px) {
+      top: 181px;
+    }
     .title {
       font-size: 70px;
       font-weight: 700;
@@ -37,11 +43,18 @@
     position: absolute;
     top: 76px;
     right: 233px;
+    @media screen and (min-width:1921px) {
+      top: 189px;
+      right: 225px;
+    }
   }
 }
 .main-swiper {
   margin-top: -130px;
   padding: 35px 70px 85px !important;
+  @media screen and (min-width:1921px) {
+    padding: 35px 70px 225px !important;
+  }
   .swiper-slide{
     width: 480px;
   }

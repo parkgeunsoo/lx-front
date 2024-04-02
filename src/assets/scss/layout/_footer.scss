@@ -1,17 +1,28 @@
 footer {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -45px;
   background-color: #f9f9f9;
   padding: 20px 30px;
   border-top: 1px solid #ebebeb;
+  @media screen and (min-width:1921px) {
+    bottom: 0;
+  }
+  .flex-wrap{
+    display: flex;
+    gap: 15px;
+
+  }
   .main-container{
     padding: 0;
   }
   .footer{
-    display: flex; gap: 15px;
+    display: flex; 
+    gap: 15px;
     max-width: 1920px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
   }
   .img {
     width: 40px;
@@ -32,11 +43,33 @@ footer {
     color: #666;
     line-height: 18px;
   }
+ .custom-select{
+    .form-select{
+      width: 200px;
+      background-color: #f9f9f9;
+      border: solid 1px #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #333;
+    }
+    &::after {
+      background-image: url('../images/icon-select-more.png');
+      width: 12px;
+      height: 12px;
+    }
+  }
 }
 
 .intro {
   .footer {
     max-width: 600px;
     margin: 0 auto;
+  }
+}
+
+.main{
+  .main-container{
+    width: 100%;
   }
 }
