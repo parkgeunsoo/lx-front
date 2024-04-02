@@ -130,6 +130,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <!-- 페이지 네비게이션 -->
                 <div class="page-nav">
                     <div class="swiper-pagination"></div>
@@ -143,8 +145,8 @@
     <script>
         // Swiper 인스턴스 생성
         var mainSwiper = new Swiper('.swiper', {
-            slidesPerView: 3.4, // 각 슬라이드가 부분적으로 표시됩니다.
-            loop: true,
+            slidesPerView: "auto",
+            // loop: true,
             spaceBetween: 20,
             // centeredSlides: true,
             autoplay: {
@@ -155,10 +157,15 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             toggles: {
                 el: '.swiper-toggle',
                 activeClass: 'swiper-toggle-active',
             },
+            allowTouchMove: false // 드래그 비활성화
         });
         document.querySelector('.swiper-toggle').addEventListener('click', function () {
             if (mainSwiper.autoplay.running) {
