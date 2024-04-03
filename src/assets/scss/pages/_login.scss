@@ -1,13 +1,15 @@
 //  로그인 -------
 .login-wrap {
   position: relative;
+  background-color: #fff !important;
+  padding: 0 !important;
 }
 .sign-container {
   max-width: 600px;
   width: 100%;
   height: 100%;
   margin: 0 auto 0;
-  padding: 0;
+  padding: 2.5% 0;
   .content {
     display: flex;
     min-height: calc(100vh - 300px) !important;
@@ -100,14 +102,25 @@
   footer {
     position: static;
     padding: 0 26px;
-    margin-top: 10%;
+    margin-top: 15%;
     border-top: 0;
     background-color: #fff;
-    .footer{
+    .footer {
       flex-direction: column;
     }
-    .main-container{
+    .flex-wrap {
+      gap: 0;
+    }
+    .main-container {
       width: 100%;
+    }
+    .custom-select {
+      display: none;
+    }
+    .company-info {
+      p {
+        font-size: 12px;
+      }
     }
   }
 }
