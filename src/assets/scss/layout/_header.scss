@@ -1,17 +1,22 @@
 #header {
   position: fixed;
   width: 100%;
-  max-width: 1920px;
   height: 80px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   padding: 20px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   z-index: 9999;
+  .header{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .left-content {
     height: 100%;
     display: flex;
