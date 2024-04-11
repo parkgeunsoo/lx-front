@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>LX</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <link rel="icon" type="image/png" href="../../assets/favicon/favicon.ico" sizes="32x32"> -->
+
+    <link rel="stylesheet" href="/assets/lib/jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/jquery/jquery-ui.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/lib/jquery/daterangepicker.css" />
+    <script type="text/javascript" src="../../assets/lib/jquery/moment.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/jquery/daterangepicker.js"></script>
+
+    <!-- swiper -->
+    <link type="text/css" href="/assets/lib/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="/assets/lib/swiper/js/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/ui.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="header">
+          <div class="left-content">
+            <div class="logo">
+              <a href="../../html/main/main.html">
+                <img src="../../assets/images/logo.png" alt="LX플랫폼 개발지원시스템" />
+              </a>
+            </div>
+            <ul>
+              <li class="gnb">
+                <a href="">개발계획</a>
+              </li>
+              <li class="gnb">
+                <a href="">운영배포</a>
+              </li>
+              <li class="gnb">
+                <a href="">배포현황</a>
+              </li>
+              <li class="notice-board">
+                <a href="">게시판</a>
+                <ul class="gnb-hover">
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-1"></i>
+                      <span>공지사항</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-2"></i>
+                      <span>자료실</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-3"></i>
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-4"></i>
+                      <span>사용자문의</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="">가이드</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-info">
+            <button class="btn btn-green btn-md btn-auto sign-btn">Log out</button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="sub-visual plan">
+          <p class="title">신청현황</p>
+        </div>
+        <div class="main-container">
+          <div class="status-color">
+            <p>상태 색상 :</p>
+            <div class="badge-list">
+              <span class="badge badge-primary">승인</span>
+              <span class="badge badge-danger">반려</span>
+              <span class="badge badge-dark">대기</span>
+              <span class="badge badge-gray">미신청</span>
+            </div>
+          </div>
+          <div class="status-tab">
+            <a href="../../html/plan/plan-001.html" class="tab tab-1 success">
+              <div class="status-tab__head">
+                <p>최종승인</p>
+                <i class="icon-inp-01"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-approval"></i>
+                  <p class="text-green">승인</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-inp-001.html" class="tab tab-2 active">
+              <div class="status-tab__head">
+                <p>인프라</p>
+                <i class="icon-inp-02"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-companion"></i>
+                  <p class="text-danger">반려</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-data-001.html" class="tab tab-3">
+              <div class="status-tab__head">
+                <p>데이터API</p>
+                <i class="icon-inp-03"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-not-applied"></i>
+                  <p class="text-gray">미신청</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-func-002.html" class="tab tab-4">
+              <div class="status-tab__head">
+                <p>기능API</p>
+                <i class="icon-inp-04"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-wait"></i>
+                  <p class="text-dark">대기</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+          </div>
+          <div class="content-body">
+            <div class="content-body__title">인프라 신청내역</div>
+            <div class="content-body__card">
+              <div class="table-head">
+                <div class="case">
+                  <p>전체 <span class="text-dark">1000</span> 건</p>
+                  <p>사용 <span class="text-green">0</span> 건</p>
+                  <p>제한 <span class="text-danger">0</span> 건</p>
+                </div>
+                <div class="btn-group justify-content-center">
+                  <div class="custom-select" style="width: 110px">
+                    <select name="" id="" class="form-select round">
+                      <option value="">10개씩</option>
+                      <option value="">20개씩</option>
+                      <option value="">30개씩</option>
+                    </select>
+                  </div>
+                  <div class="custom-select" style="width: 110px">
+                    <select name="" id="" class="form-select round">
+                      <option value="">최신순</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-outline-green btn-auto round">미신청</button>
+                </div>
+              </div>
+              <table class="table lg-pd">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="15%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="text-center">
+                      <div class="sort">상품명 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">
+                      <div class="sort">구분 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">
+                      <div class="sort">요금 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">
+                      <div class="sort">추가서비스 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">
+                      <div class="sort">신청자 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">
+                      <div class="sort">신청일 <i class="icon-select-off"></i></div>
+                    </th>
+                    <th class="text-center">상세</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">기본상품 - 01</td>
+                    <td class="text-center">운영/개발</td>
+                    <td class="text-center">10,000,000</td>
+                    <td class="text-center">
+                      <span class="text-green">O</span>
+                    </td>
+                    <td class="text-center">강효두</td>
+                    <td class="text-center">2023-10-28</td>
+                    <td class="text-center">
+                      <a href="" class="text-green text-underline">보기</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <i class="icon-pagination-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link active" href="#" aria-label="Next">
+                      <i class="icon-pagination-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-body__title">인프라 신청</div>
+            <div class="content-body__card price">
+              <div class="estimated-price">
+                <div class="left-content">
+                  <div class="price">
+                    <i class="icon-price"></i>
+                    <p>예상요금</p>
+                  </div>
+                  <p class="exe">
+                    <i class="icon-date"></i>
+                    예상요금은 1년 계약 기준입니다.
+                  </p>
+                </div>
+                <div class="right-content">
+                  <div>10,635,000원</div>
+                  <a href="">
+                    <i class="icon-print"></i>
+                    출력
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-body__card mt-40 p-0">
+              <div class="card-head">
+                <p class="card-head__title">상품선택</p>
+                <p class="card-head__desc">*세트 상품구성이 기본이나, 운영 / 개발을 체크하여 1개도 신청 가능합니다.</p>
+              </div>
+              <div class="slide-select">
+                <div class="swiper product-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <input type="radio" id="check1" name="product" checked />
+                      <label for="check1">기본 인프라-01</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check2" name="product" checked="" />
+                      <label for="check2">소규모 적합형</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check3" name="product" checked="" />
+                      <label for="check3">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check4" name="product" checked="" />
+                      <label for="check4">기본상품2</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check5" name="product" checked="" />
+                      <label for="check5">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check6" name="product" checked="" />
+                      <label for="check6">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check7" name="product" checked="" />
+                      <label for="check7">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="chec8" name="product" checked="" />
+                      <label for="check8">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check9" name="product" checked="" />
+                      <label for="check9">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check10" name="product" checked="" />
+                      <label for="check10">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check11" name="product" checked="" />
+                      <label for="check11">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check12" name="product" checked="" />
+                      <label for="check12">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check13" name="product" checked="" />
+                      <label for="check13">기본상품1</label>
+                    </div>
+                    <div class="swiper-slide">
+                      <input type="radio" id="check14" name="product" checked="" />
+                      <label for="check14">기본상품1</label>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="select-content">
+                  <div class="select-content__head">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                      <label class="form-check-label" for="btncheck1"><i class="icon-inp-1"></i> 운영</label>
+                    </div>
+                  </div>
+                  <ul class="select-content__body">
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input">
+                        <input type="number" class="form-control" value="0" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="select-content">
+                  <div class="select-content__head">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off" />
+                      <label class="form-check-label" for="btncheck2"><i class="icon-inp-2"></i> 개발</label>
+                    </div>
+                  </div>
+                  <ul class="select-content__body">
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="139000" />
+                        <p>원</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <input type="text" class="form-control" style="width: 140px" value="WEB" />
+                      <input type="text" class="form-control" style="width: 140px" value="Compute" />
+                      <input type="text" class="form-control" style="width: 140px" value="Server" />
+                      <div class="custom-select" style="width: 140px">
+                        <select name="" id="" class="form-select">
+                          <option value="">Standard-1</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 288px" value="vCPU 2Core  / RAM 16GB  / HDD 50GB" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input">
+                        <input type="number" class="form-control" value="0" />
+                        <p>원</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-body__card mt-40 p-0">
+              <div class="card-head">
+                <p class="card-head__title">추가 서비스 선택</p>
+                <p class="card-head__desc">* 필요한 추가 서비스를 직접 선택하여 신청할 수 있습니다.</p>
+              </div>
+              <div class="card-content">
+                <div class="service-content">
+                  <ul class="service-content__body">
+                    <li>
+                      <input type="text" class="form-control" style="width: 141px" value="" placeholder="이름입력" />
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">대분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">중분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">소분류명 선택</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 289px" value="" placeholder="소분류 스펙 노출" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input">
+                        <input type="number" class="form-control" value="0" />
+                        <p>원</p>
+                      </div>
+                      <button type="button" class="btns-sign"><i class="icon-minus"></i></button>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 141px" value="" placeholder="이름입력" />
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">대분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">중분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">소분류명 선택</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 289px" value="" placeholder="소분류 스펙 노출" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="1398000" />
+                        <p>원</p>
+                      </div>
+                      <button type="button" class="btns-sign"><i class="icon-minus"></i></button>
+                    </li>
+                    <li>
+                      <input type="text" class="form-control" style="width: 141px" value="" placeholder="이름입력" />
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">대분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">중분류선택</option>
+                        </select>
+                      </div>
+                      <div class="custom-select" style="width: 141px">
+                        <select name="" id="" class="form-select">
+                          <option value="">소분류명 선택</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" style="width: 289px" value="" placeholder="소분류 스펙 노출" />
+                      <div class="custom-select" style="width: 71px">
+                        <select name="" id="" class="form-select">
+                          <option value="">1</option>
+                        </select>
+                      </div>
+                      <div class="price-input active">
+                        <input type="number" class="form-control" value="1398000" />
+                        <p>원</p>
+                      </div>
+                      <button type="button" class="btns-sign"><i class="icon-plus"></i></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-body__title note">비고</div>
+            <div class="content-body__card">
+              <textarea name="" id="" class="form-control" style="min-height: 120px"></textarea>
+            </div>
+            <div class="btn-group justify-content-center">
+              <button type="button" class="btn btn-min btn-auto btn-green round btn-lg">신청하기</button>
+              <button type="button" class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="main-container">
+          <div class="footer">
+            <div class="flex-wrap">
+              <div class="img">
+                <img src="../../assets/images/footer-logo.png" alt="LX" />
+              </div>
+              <div>
+                <div class="company-info">
+                  <p>54870 전라북도 전주시 덕진구 기지로 120 (중동)</p>
+                  <p>대표전화 : 063-713-1000</p>
+                  <p>디지털트윈사업단 : 063-713-1235</p>
+                </div>
+                <div class="copyright">Copyright © lx.all rights reserved.</div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <select name="" id="" class="form-select">
+                <option value="">운영포탈시스템</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var swiper = new Swiper('.product-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      $('.swiper-slide').click(function () {
+        $(this).toggleClass('active');
+      });
+    </script>
+  </body>
+</html>

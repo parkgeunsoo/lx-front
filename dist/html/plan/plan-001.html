@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>LX</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <link rel="icon" type="image/png" href="../../assets/favicon/favicon.ico" sizes="32x32"> -->
+
+    <link rel="stylesheet" href="/assets/lib/jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/jquery/jquery-ui.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/lib/jquery/daterangepicker.css" />
+    <script type="text/javascript" src="../../assets/lib/jquery/moment.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/jquery/daterangepicker.js"></script>
+
+    <!-- swiper -->
+    <link type="text/css" href="/assets/lib/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="/assets/lib/swiper/js/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/ui.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="header">
+          <div class="left-content">
+            <div class="logo">
+              <a href="../../html/main/main.html">
+                <img src="../../assets/images/logo.png" alt="LX플랫폼 개발지원시스템" />
+              </a>
+            </div>
+            <ul>
+              <li class="gnb">
+                <a href="">개발계획</a>
+              </li>
+              <li class="gnb">
+                <a href="">운영배포</a>
+              </li>
+              <li class="gnb">
+                <a href="">배포현황</a>
+              </li>
+              <li class="notice-board">
+                <a href="">게시판</a>
+                <ul class="gnb-hover">
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-1"></i>
+                      <span>공지사항</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-2"></i>
+                      <span>자료실</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-3"></i>
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-4"></i>
+                      <span>사용자문의</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="">가이드</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-info">
+            <button class="btn btn-green btn-md btn-auto sign-btn">Log out</button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="sub-visual plan">
+          <p class="title">신청현황</p>
+        </div>
+        <div class="main-container">
+          <div class="status-color">
+            <p>상태 색상 :</p>
+            <div class="badge-list">
+              <span class="badge badge-primary">승인</span>
+              <span class="badge badge-danger">반려</span>
+              <span class="badge badge-dark">대기</span>
+              <span class="badge badge-gray">미신청</span>
+            </div>
+          </div>
+          <div class="status-tab">
+            <a href="../../html/plan/plan-001.html" class="tab tab-1 success active">
+              <div class="status-tab__head">
+                <p>최종승인</p>
+                <i class="icon-inp-01"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-approval"></i>
+                  <p class="text-green">승인</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-inp-001.html" class="tab tab-2">
+              <div class="status-tab__head">
+                <p>인프라</p>
+                <i class="icon-inp-02"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-companion"></i>
+                  <p class="text-danger">반려</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-data-001.html" class="tab tab-3">
+              <div class="status-tab__head">
+                <p>데이터API</p>
+                <i class="icon-inp-03"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-not-applied"></i>
+                  <p class="text-gray">미신청</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+            <a href="../../html/plan/plan-func-002.html" class="tab tab-4">
+              <div class="status-tab__head">
+                <p>기능API</p>
+                <i class="icon-inp-04"></i>
+              </div>
+              <div class="status-tab__content">
+                <div class="check">
+                  <i class="icon-state-wait"></i>
+                  <p class="text-dark">대기</p>
+                </div>
+                <div class="date">2023-10-30</div>
+              </div>
+            </a>
+          </div>
+          <div class="content-body">
+            <div class="content-body__title">신청현황</div>
+            <div class="content-body__card detail-page">
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-label">
+                    <p>신청번호</p>
+                    <input type="text" class="form-control" placeholder="" value="20231212-114" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-label">
+                    <p>구분</p>
+                    <input type="text" class="form-control" placeholder="" value="2D" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-label">
+                    <p>유형</p>
+                    <input type="text" class="form-control" placeholder="" value="FRONT-END" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-label">
+                    <p>서비스명</p>
+                    <input type="text" class="form-control" placeholder="" value="건물의 윤곽 표시 및 상세 설명 표시에 대한 이정표 개발" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-label">
+                    <p>신청자</p>
+                    <input type="text" class="form-control" placeholder="" value="심미영" />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-label">
+                    <p>신청일</p>
+                    <input type="text" class="form-control" placeholder="" value="2023.11.13" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="content-body__title">처리현황</div>
+            <div class="content-body__card detail-page">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-label">
+                    <p>최종승인</p>
+                    <div class="d-flex align-items-center gap-10">
+                      <input type="text" class="form-control" placeholder="" value="승인" />
+                      <button type="button" class="btn btn-outline-green w-auto flex-shrink-0">개발배포</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-label">
+                    <p>승인(반려)일</p>
+                    <input type="text" class="form-control" placeholder="" value="2023.11.13" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-label">
+                    <p>GIT 주소</p>
+                    <input type="text" class="form-control" placeholder="" value="$ git remote set-url origin https://github.com/xpressengine/xpressengine.git ​" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-label">
+                    <p>Test URL</p>
+                    <input type="text" class="form-control" placeholder="" value="https:/lxfront.projectlist.kr/html/plan/plan-stat-001.html" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="main-container">
+          <div class="footer">
+            <div class="flex-wrap">
+              <div class="img">
+                <img src="../../assets/images/footer-logo.png" alt="LX" />
+              </div>
+              <div>
+                <div class="company-info">
+                  <p>54870 전라북도 전주시 덕진구 기지로 120 (중동)</p>
+                  <p>대표전화 : 063-713-1000</p>
+                  <p>디지털트윈사업단 : 063-713-1235</p>
+                </div>
+                <div class="copyright">Copyright © lx.all rights reserved.</div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <select name="" id="" class="form-select">
+                <option value="">운영포탈시스템</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var swiper = new Swiper('.product-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      $('.swiper-slide').click(function () {
+        $(this).toggleClass('active');
+      });
+    </script>
+  </body>
+</html>

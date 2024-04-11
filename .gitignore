@@ -63,7 +63,7 @@ desktop.ini
 #############
 **/._*
 **/node_modules
-*dist
+# *dist
 .history
 node_modules
 package-lock.json

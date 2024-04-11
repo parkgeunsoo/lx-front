@@ -1,0 +1,163 @@
+.notice-container {
+  padding: 20px;
+}
+.notice-container .notice-head .notice-head__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #202020;
+  margin-bottom: 20px;
+}
+.notice-container .notice-head .notice-head__info {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.notice-container .notice-head .notice-head__info p {
+  font-size: 16px;
+  color: #6e6e6e;
+  position: relative;
+}
+.notice-container .notice-head .notice-head__info p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+}
+.notice-container .notice-head .notice-head__info p:first-child::before {
+  content: none;
+}
+.notice-container .question-object {
+  padding-top: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+  gap: 10px;
+}
+.notice-container .question-object .point {
+  font-weight: 700;
+}
+.notice-container .notice-content {
+  margin: 60px 0;
+  gap: 10px;
+}
+.notice-container .notice-content .point {
+  font-weight: 700;
+}
+.notice-container .notice-content p {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+}
+.notice-container .download-wrap {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.notice-container .download-wrap a {
+  font-size: 16px;
+  color: #222;
+}
+.notice-container .download-wrap a:hover {
+  text-decoration: underline;
+}
+
+.accordion-wrap {
+  border-top: 1px solid #000;
+}
+.accordion-wrap li {
+  border-bottom: 1px solid #ddd;
+}
+.accordion-wrap .accordion-head {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+.accordion-wrap .accordion-head .question {
+  width: 15%;
+  padding: 0 15px;
+}
+.accordion-wrap .accordion-head .title {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  padding: 0 15px;
+  gap: 30px;
+}
+.accordion-wrap .accordion-head .title p {
+  line-height: 1.4;
+}
+.accordion-wrap .accordion-head .icon-accordion-off {
+  transition: all 0.5s;
+}
+.accordion-wrap .accordion-head.active .icon-accordion-off {
+  background-image: url("../images/icon-accordion-on.png");
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+.accordion-wrap .accordion-content {
+  display: none;
+  padding: 32px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+.accordion-wrap .accordion-content .desc {
+  width: 85%;
+  margin-left: auto;
+}
+.accordion-wrap .accordion-content .desc p {
+  line-height: 1.63;
+  color: #222;
+  font-family: "Pretendard" !important;
+}
+.accordion-wrap .accordion-content .desc p span {
+  font-family: "Pretendard" !important;
+}
+.accordion-wrap .accordion-content .desc p li {
+  font-family: "Pretendard" !important;
+}
+.accordion-wrap .accordion-content .desc p b {
+  font-family: "Pretendard" !important;
+}
+.accordion-wrap .accordion-content .desc p strong {
+  font-family: "Pretendard" !important;
+}
+
+.btn-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  gap: 10px;
+}
+.btn-radio input[type=radio] {
+  display: none;
+}
+.btn-radio input[type=radio]:checked + label {
+  color: #fff;
+  border: 1px solid #202020;
+  background-color: #202020;
+}
+.btn-radio label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #777;
+  border-radius: 20px;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
+  padding: 11px 19px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=../maps/pages/notice.css.map */

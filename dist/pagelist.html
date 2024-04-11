@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>(Pagelist)LX - FRONT</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>LX</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <link rel="icon" type="image/png" href="./assets/favicon/favicon.ico" sizes="32x32"> -->
+
+    <link rel="stylesheet" href="/assets/lib/jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/jquery/jquery-ui.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./assets/lib/jquery/daterangepicker.css" />
+    <script type="text/javascript" src="./assets/lib/jquery/moment.min.js"></script>
+    <script type="text/javascript" src="./assets/lib/jquery/daterangepicker.js"></script>
+
+    <!-- swiper -->
+    <link type="text/css" href="/assets/lib/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="/assets/lib/swiper/js/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/ui.js" defer></script>
+    <style>
+      body {
+        padding: 20px;
+        max-width: 100%;
+        position: relative;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: #222;
+        line-height: 1.5em;
+        font-family: 'arial', 'NanumGothic';
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      table {
+        width: 100%;
+        max-width: 1040px;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #b0beec;
+        padding: 2px 10px;
+        word-break: keep-all;
+      }
+
+      table th {
+        background: #2e4dbb;
+        color: #fff;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      table td a {
+        color: rgb(17, 26, 41);
+        text-decoration: none;
+      }
+
+      table td a:hover {
+        text-decoration: underline;
+      }
+
+      table tbody tr:hover {
+        background-color: #dee4fa;
+      }
+
+      .noteTable {
+        display: table;
+        width: 100%;
+      }
+
+      .noteTable .date {
+        display: table-cell;
+        color: #ff523c;
+        width: 40px;
+      }
+
+      .noteTable .note {
+        display: table-cell;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .bg {
+        background: #fff5f5;
+      }
+
+      ul.float {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      ul.float li {
+        list-style: none;
+        border: 1px solid #ccc;
+        padding: 2px 5px;
+        display: inline-block;
+      }
+
+      .end {
+        background: #ffffcc;
+      }
+
+      .ing {
+        background: #f6b1a6;
+      }
+
+      .list {
+        text-align: center;
+        padding: 0 0 20px;
+      }
+
+      .list a {
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .list a:hover {
+        text-decoration: underline;
+      }
+
+      .box {
+        border: 2px dotted #aaa;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .box > ul {
+        display: inline-block;
+        text-align-last: left;
+      }
+
+      .divider {
+        text-align: center;
+        padding: 6px;
+        background: #dcd5f0;
+        font-weight: 700;
+      }
+
+      .quickMenu {
+        width: 100%;
+        max-width: 1040px;
+        margin: 0px;
+        align-items: center;
+      }
+
+      .btns {
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto 30px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+
+      .download-btn {
+        background-color: #222;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 4px;
+      }
+
+      .pagemove-btn {
+        background-color: #ffcc66;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 4px;
+      }
+
+      .tablenone {
+        padding: 0px;
+        margin: 0px;
+        border-left: hidden;
+        border-right: hidden;
+        border-top: hidden;
+        border-bottom: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>LX - FRONT</h1>
+    <table>
+      <tr>
+        <td class="tablenone">
+          <a href="https://lx.projectlist.kr/pagelist.html" class="pagemove-btn">LX - ADMIN</a>
+        </td>
+        <td class="tablenone" style="text-align: right">
+          <a href="/download/" class="download-btn">DOWNLOAD</a>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Depth 1</th>
+          <th>Depth 2</th>
+          <th>Depth 3</th>
+          <th>File</th>
+          <th>pageLink</th>
+          <th>진행도</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="pageList">
+        <tr>
+          <td></td>
+          <td>에러페이지</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/util/error.html">error.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>로그인</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/signup/login.html">login.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>아이디 찾기</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/signup/find-id.html">find-id.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>아이디 리스트</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/signup/find-id-list.html">find-id-list.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>main</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/main/main.html">main.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>개발계획</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/plan/plan-stat-001.html">plan-stat-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>최종승인</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/plan/plan-001.html">plan-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>인프라 신청내역</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/plan/plan-inp-001.html">plan-inp-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>데이터API</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/plan/plan-data-001.html">plan-data-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>기능API</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/plan/plan-func-002.html">plan-func-002.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>운영배포</td>
+          <td>신청현황</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/operational/live-stat-001.html">live-stat-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>신청정보</td>
+          <td>수정</td>
+          <td></td>
+          <td><a target="_blank" href="/html/operational/live-stat-002.html">live-stat-002.html</a></td>
+          <td></td>
+          <td>04-03 신청번호에 readonly 추가</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>신청정보</td>
+          <td>등록</td>
+          <td></td>
+          <td><a target="_blank" href="/html/operational/live-stat-003.html">live-stat-003.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>게시판</td>
+          <td>공지사항</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-noti-001.html">dev-noti-001.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>공지사항 상세</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-noti-002.html">dev-noti-002.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>자료실</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-arch-001.html">dev-arch-001.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>자료실 상세</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-arch-002.html">dev-arch-002.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>FAQ</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-faq-001.html">dev-faq-001.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>사용자 문의</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-qna-001.html">dev-qna-001.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>사용자 문의 상세</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-qna-002.html">dev-qna-002.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>사용자 문의 등록</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-qna-003.html">dev-qna-003.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>사용자 문의 수정</td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/notice/dev-qna-004.html">dev-qna-004.html.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>가이드</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a target="_blank" href="/html/guide/dev-gui-001.html">dev-gui-001.html</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      var leng = document.querySelectorAll('tbody td a');
+      console.log(leng.length);
+
+      // var rows = document.getElementById("pageList").getElementsByTagName("tr");
+      // console.log(rows.length);
+    </script>
+  </body>
+</html>

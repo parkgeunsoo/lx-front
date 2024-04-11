@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>LX</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <link rel="icon" type="image/png" href="../../assets/favicon/favicon.ico" sizes="32x32"> -->
+
+    <link rel="stylesheet" href="/assets/lib/jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/jquery/jquery-ui.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/lib/jquery/daterangepicker.css" />
+    <script type="text/javascript" src="../../assets/lib/jquery/moment.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/jquery/daterangepicker.js"></script>
+
+    <!-- swiper -->
+    <link type="text/css" href="/assets/lib/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="/assets/lib/swiper/js/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/ui.js" defer></script>
+  </head>
+
+  <body class="main">
+    <div id="wrap">
+      <header id="header">
+        <div class="header">
+          <div class="left-content">
+            <div class="logo">
+              <a href="../../html/main/main.html">
+                <img src="../../assets/images/logo.png" alt="LX플랫폼 개발지원시스템" />
+              </a>
+            </div>
+            <ul>
+              <li class="gnb">
+                <a href="">개발계획</a>
+              </li>
+              <li class="gnb">
+                <a href="">운영배포</a>
+              </li>
+              <li class="gnb">
+                <a href="">배포현황</a>
+              </li>
+              <li class="notice-board">
+                <a href="">게시판</a>
+                <ul class="gnb-hover">
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-1"></i>
+                      <span>공지사항</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-2"></i>
+                      <span>자료실</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-3"></i>
+                      <span>FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="icon-gnb-4"></i>
+                      <span>사용자문의</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="">가이드</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-info">
+            <button class="btn btn-green btn-md btn-auto sign-btn">Log out</button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="visual">
+          <div class="main-bg">
+            <div class="text-box">
+              <p class="title">
+                LX PLATFORM<br />
+                DEVELOPMENT<br />
+                SUPPORT SYSTEM
+              </p>
+              <p class="desc">LX플랫폼 개발지원시스템에 오신 것을 환영합니다</p>
+            </div>
+            <div class="img"><img src="../../assets/images/banner-sub-img.png" alt="" /></div>
+          </div>
+        </div>
+        <div class="swiper main-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">개발계획신청</p>
+                <p class="desc">
+                  서비스 개발을 위한 <br />
+                  기능 API / 데이터 API <br />
+                  인프라 신청을 할 수 있어요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-01.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">운영배포신청</p>
+                <p class="desc">
+                  개발을 완료하고<br />
+                  운영배포를 신청하세요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-02.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">배포현황</p>
+                <p class="desc">
+                  개발완료배포와 운영배포의<br />
+                  현황을 확인하세요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-03.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">공지사항</p>
+                <p class="desc">
+                  업데이트나 주요내용을<br />
+                  알려드려요.
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-04.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">자료실</p>
+                <p class="desc">
+                  필요한 정보를 파일로<br />
+                  받아볼 수 있어요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-05.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">FAQ</p>
+                <p class="desc">
+                  자주묻는 질문의 답변을<br />
+                  모아 놓았어요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-06.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">사용자문의</p>
+                <p class="desc">
+                  궁금한 점을 문의하면<br />
+                  운영자가 답변을 해줘요
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-07.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <p class="title">가이드</p>
+                <p class="desc">
+                  개발과 환경구성, 인프라<br />
+                  플랫폼 이용에 관한 가이드 모음
+                </p>
+                <button type="button" class="btn more-btn btn-outline-dark">더보기+</button>
+                <div class="img">
+                  <img src="../../assets/images/main-card-08.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- 페이지 네비게이션 -->
+          <div class="page-nav">
+            <div class="swiper-pagination"></div>
+            <button class="swiper-toggle"><i class="icon-play"></i></button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="main-container">
+          <div class="footer">
+            <div class="flex-wrap">
+              <div class="img">
+                <img src="../../assets/images/footer-logo.png" alt="LX" />
+              </div>
+              <div>
+                <div class="company-info">
+                  <p>54870 전라북도 전주시 덕진구 기지로 120 (중동)</p>
+                  <p>대표전화 : 063-713-1000</p>
+                  <p>디지털트윈사업단 : 063-713-1235</p>
+                </div>
+                <div class="copyright">Copyright © lx.all rights reserved.</div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <select name="" id="" class="form-select">
+                <option value="">운영포탈시스템</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Swiper 인스턴스 생성
+      var mainSwiper = new Swiper('.swiper', {
+        slidesPerView: 'auto',
+        // loop: true,
+        spaceBetween: 20,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        toggles: {
+          el: '.swiper-toggle',
+          activeClass: 'swiper-toggle-active',
+        },
+        allowTouchMove: false, // 드래그 비활성화
+      });
+      document.querySelector('.swiper-toggle').addEventListener('click', function () {
+        if (mainSwiper.autoplay.running) {
+          mainSwiper.autoplay.stop();
+          $('.swiper-toggle').addClass('active');
+        } else {
+          mainSwiper.autoplay.start();
+          $('.swiper-toggle').removeClass('active');
+        }
+      });
+    </script>
+  </body>
+</html>
