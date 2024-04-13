@@ -173,7 +173,20 @@
                       <option value="">30개씩</option>
                     </select>
                   </div>
-                  <button type="button" class="btn btn-gray btn-auto round" disabled>미신청</button>
+                  <div class="custom-select" style="width: 110px">
+                    <select name="" id="" class="form-select round">
+                      <option value="">최신순</option>
+                    </select>
+                  </div>
+                  <div class="custom-select" style="width: 90px">
+                    <select name="" id="" class="form-select round">
+                      <option value="">사용</option>
+                      <option value="">미사용</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-outline-dark btn-auto round">삭제</button>
+                  <button type="button" class="btn btn-outline-green btn-auto round">미신청</button>
+                  <button type="button" class="btn btn-green btn-auto round">신청하기</button>
                 </div>
               </div>
               <table class="table">
@@ -555,9 +568,10 @@
     </div>
     <script>
       $(document).ready(function () {
-        $('.slide-box').click(function () {
-          $(this).find('.api-list__desc').slideToggle(350);
-          $(this).toggleClass('active');
+        $('.api-list__title').click(function () {
+          var slideBox = $(this).closest('.slide-box');
+          slideBox.find('.api-list__desc').slideToggle(350);
+          slideBox.toggleClass('active');
         });
 
         $('.content-close').click(function () {

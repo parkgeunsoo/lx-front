@@ -89,74 +89,11 @@
       </header>
       <div class="content">
         <div class="sub-visual plan">
-          <p class="title">신청현황</p>
+          <p class="title">신청하기</p>
         </div>
         <div class="main-container">
-          <div class="status-color">
-            <p>상태 색상 :</p>
-            <div class="badge-list">
-              <span class="badge badge-primary">승인</span>
-              <span class="badge badge-danger">반려</span>
-              <span class="badge badge-dark">대기</span>
-              <span class="badge badge-gray">미신청</span>
-            </div>
-          </div>
-          <div class="status-tab">
-            <a href="../../html/plan/plan-001.html" class="tab tab-1 success active">
-              <div class="status-tab__head">
-                <p>최종승인</p>
-                <i class="icon-inp-01"></i>
-              </div>
-              <div class="status-tab__content">
-                <div class="check">
-                  <i class="icon-state-approval"></i>
-                  <p class="text-green">승인</p>
-                </div>
-                <div class="date">2023-10-30</div>
-              </div>
-            </a>
-            <a href="../../html/plan/plan-inp-001.html" class="tab tab-2">
-              <div class="status-tab__head">
-                <p>인프라</p>
-                <i class="icon-inp-02"></i>
-              </div>
-              <div class="status-tab__content">
-                <div class="check">
-                  <i class="icon-state-companion"></i>
-                  <p class="text-danger">반려</p>
-                </div>
-                <div class="date">2023-10-30</div>
-              </div>
-            </a>
-            <a href="../../html/plan/plan-data-001.html" class="tab tab-3">
-              <div class="status-tab__head">
-                <p>데이터API</p>
-                <i class="icon-inp-03"></i>
-              </div>
-              <div class="status-tab__content">
-                <div class="check">
-                  <i class="icon-state-not-applied"></i>
-                  <p class="text-gray">미신청</p>
-                </div>
-                <div class="date">2023-10-30</div>
-              </div>
-            </a>
-            <a href="../../html/plan/plan-func-002.html" class="tab tab-4">
-              <div class="status-tab__head">
-                <p>기능API</p>
-                <i class="icon-inp-04"></i>
-              </div>
-              <div class="status-tab__content">
-                <div class="check">
-                  <i class="icon-state-wait"></i>
-                  <p class="text-dark">대기</p>
-                </div>
-                <div class="date">2023-10-30</div>
-              </div>
-            </a>
-          </div>
           <div class="content-body">
-            <div class="content-body__title">신청현황</div>
+            <div class="content-body__title">운영배포 신청하기</div>
             <div class="content-body__card detail-page">
               <div class="row">
                 <div class="col-4">
@@ -187,46 +124,30 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6">
+                <div class="col-4">
                   <div class="form-label">
                     <p>신청자</p>
                     <input type="text" class="form-control" placeholder="" value="심미영" />
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                   <div class="form-label">
                     <p>신청일</p>
-                    <input type="text" class="form-control" placeholder="" value="2023.11.13" />
+                    <input type="number" class="form-control" placeholder="" value="2023.11.13" />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="content-body">
-            <div class="content-body__title">처리현황</div>
-            <div class="content-body__card detail-page">
-              <div class="row">
-                <div class="col-6">
+                <div class="col-4">
                   <div class="form-label">
-                    <p>최종승인</p>
-                    <div class="d-flex align-items-center gap-10">
-                      <input type="text" class="form-control" placeholder="" value="승인" />
-                      <button type="button" class="btn btn-green round w-auto flex-shrink-0">개발배포</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-label">
-                    <p>승인(반려)일</p>
-                    <input type="text" class="form-control" placeholder="" value="2023.11.13" />
+                    <p>개발배포</p>
+                    <input type="text" class="form-control" placeholder="" value="성공" />
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
                   <div class="form-label">
-                    <p>GIT 주소</p>
-                    <input type="text" class="form-control" placeholder="" value="$ git remote set-url origin https://github.com/xpressengine/xpressengine.git ​" />
+                    <p>GIT주소</p>
+                    <input type="text" class="form-control" placeholder="" value="$ git remote set-url origin https://github.com/xpressengine/xpressengine.git" />
                   </div>
                 </div>
               </div>
@@ -234,9 +155,12 @@
                 <div class="col-12">
                   <div class="form-label">
                     <p>Test URL</p>
-                    <input type="text" class="form-control" placeholder="" value="https:/lxfront.projectlist.kr/html/plan/plan-stat-001.html" />
+                    <input type="text" class="form-control text-green" placeholder="" value="https://lxfront.projectlist.kr/html/plan/plan-stat-001.html" />
                   </div>
                 </div>
+              </div>
+              <div class="btn-group justify-content-center">
+                <button type="button" class="btn btn-min btn-auto btn-green round btn-lg">신청하기</button>
               </div>
             </div>
           </div>
@@ -267,18 +191,5 @@
         </div>
       </footer>
     </div>
-    <script>
-      var swiper = new Swiper('.product-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 5,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      $('.swiper-slide').click(function () {
-        $(this).toggleClass('active');
-      });
-    </script>
   </body>
 </html>

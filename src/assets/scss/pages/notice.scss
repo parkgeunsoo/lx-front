@@ -168,3 +168,23 @@
     cursor: pointer;
   }
 }
+
+.success-date{
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  .date{
+    color: #6e6e6e;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 12px;
+      background-color: #ddd;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10px;
+    }
+  }
+}

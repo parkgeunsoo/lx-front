@@ -96,7 +96,20 @@
                                         <option value="">30개씩</option>
                                     </select>
                                 </div>
-                                <button type="button" class="btn btn-gray btn-auto round">미신청</button>
+                                <div class="custom-select" style="width: 110px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">최신순</option>
+                                    </select>
+                                </div>
+                                <div class="custom-select" style="width: 90px">
+                                    <select name="" id="" class="form-select round">
+                                        <option value="">사용</option>
+                                        <option value="">미사용</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-outline-dark btn-auto round">삭제</button>
+                                <button type="button" class="btn btn-outline-green btn-auto round">미신청</button>
+                                <button type="button" class="btn btn-green btn-auto round">신청하기</button>
                             </div>
                         </div>
                         <table class="table">
@@ -192,7 +205,8 @@
                                                 <ul class="api-list__desc">
                                                     <li>
                                                         <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck1" autocomplete="off" />
                                                         </div>
                                                         <p class="desc">http://api.wexample.com/ device-management /
                                                             Managed-devices
@@ -201,7 +215,8 @@
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off" />
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck2" autocomplete="off" />
                                                         </div>
                                                         <p class="desc">http://api.wexample.com/ device-management /
                                                             Managed-devices
@@ -222,7 +237,8 @@
                                                 <ul class="api-list__desc">
                                                     <li>
                                                         <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck1" autocomplete="off" />
                                                         </div>
                                                         <p class="desc">http://api.wexample.com/ device-management /
                                                             Managed-devices
@@ -231,7 +247,8 @@
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <input type="checkbox" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off" />
+                                                            <input type="checkbox" class="form-check-input"
+                                                                name="capacity" id="btncheck2" autocomplete="off" />
                                                         </div>
                                                         <p class="desc">http://api.wexample.com/ device-management /
                                                             Managed-devices
@@ -263,14 +280,16 @@
                                     </div>
                                 </div>
                                 <div class="api-wrap-footer">
-                                    <button type="button" class="btn btn-min btn-auto btn-green round btn-lg" disabled>신청하기</button>
+                                    <button type="button" class="btn btn-min btn-auto btn-green round btn-lg"
+                                        disabled>신청하기</button>
                                 </div>
                             </div>
                         </div>
 
 
                         <div class="foot-btn-group justify-content-center">
-                            <button type="button" class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
+                            <button type="button"
+                                class="btn btn-min btn-auto btn-outline-gray round btn-lg">목록으로</button>
                         </div>
                     </div>
                 </div>
@@ -280,11 +299,11 @@
     </div>
     <script>
         $(document).ready(function () {
-            $('.slide-box').click(function () {
-                $(this).find('.api-list__desc').slideToggle(350);
-                $(this).toggleClass('active');
-            })
-
+            $('.api-list__title').click(function () {
+                var slideBox = $(this).closest('.slide-box');
+                slideBox.find('.api-list__desc').slideToggle(350);
+                slideBox.toggleClass('active');
+            });
             $('.content-close').click(function () {
                 $('.api-check-list').remove();
             })

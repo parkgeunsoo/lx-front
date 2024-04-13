@@ -52,7 +52,7 @@
   right: 22px;
 }
 .filter .search-btn {
-  width: 410px;
+  width: 390px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +130,7 @@
 .table-head .case p {
   position: relative;
   color: #555;
-  font-size: 15px;
+  font-size: 16px;
 }
 .table-head .case p::before {
   content: "";
@@ -199,7 +199,7 @@
   border: 0;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
   border-radius: 0;
 }
@@ -212,11 +212,11 @@
 .select-content__body li .price-input .form-control {
   border-bottom: 0;
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 .select-content__body li .price-input p {
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 .select-content__body li .price-input.active {
@@ -267,11 +267,11 @@
   border: 0;
   border-bottom: 0;
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 .service-content .service-content__body li .price-input p {
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 .service-content .service-content__body li .price-input.active {
@@ -332,7 +332,7 @@
   justify-content: space-between;
 }
 .status-tab .status-tab__head p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #333;
 }
@@ -373,7 +373,7 @@
   color: #222;
 }
 .api-wrap .api-wrap__head .cnt {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #999;
 }
@@ -389,7 +389,7 @@
   margin-top: 18px;
 }
 .api-wrap-footer .more {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #111;
   display: flex;
@@ -424,7 +424,7 @@
 }
 .api-wrap__list .cell {
   padding: 0 15px;
-  font-size: 15px;
+  font-size: 16px;
   color: #555;
 }
 .api-wrap__list .flex-cell {
@@ -447,7 +447,7 @@
   align-items: center;
   border-bottom: 1px solid #000;
   padding: 24px 15px;
-  font-size: 15px;
+  font-size: 16px;
   color: #222;
   font-weight: 700;
 }
