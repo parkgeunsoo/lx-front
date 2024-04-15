@@ -872,6 +872,18 @@ progress {
   background-image: url("../images/icon-img-view.png");
 }
 
+.icon-top {
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/top-btn.png");
+}
+
+.icon-close-w {
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/icon-close-w.png");
+}
+
 .overflow-y-scroll {
   height: 100%;
   overflow-y: auto;
@@ -1921,6 +1933,7 @@ progress {
   padding: 20px;
   font-weight: 700;
   color: #222;
+  word-break: break-word;
 }
 .table thead .sub-head {
   font-weight: 500;
@@ -1934,6 +1947,7 @@ progress {
   border-bottom: 1px solid #ccc;
   font-size: 16px;
   color: #555;
+  word-break: break-word;
 }
 .table.table-row {
   background-color: #fff;
@@ -2202,7 +2216,7 @@ progress {
   padding: 10px 0 10px 10px;
   border-right: 1px solid #ebebeb;
   color: #777777;
-  font-size: 16px;
+  font-size: 15px;
 }
 .modal-body .user-authority {
   display: flex;
@@ -2267,7 +2281,7 @@ progress {
   display: none;
 }
 .modal-body .user-authority .list-box.role .role-sub-wrap .sub-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #111;
   padding: 14px 16px 16px 30px;
@@ -2303,7 +2317,7 @@ progress {
 .modal-body .row-tb-top dl dt {
   position: relative;
   width: 50px;
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 11px;
   font-weight: 500;
 }
@@ -2331,7 +2345,7 @@ progress {
 }
 .modal-body .row-tb table th {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
 .modal-body .row-tb table td {
   padding: 5px 0;
@@ -2365,8 +2379,8 @@ progress {
   margin-bottom: 10px;
 }
 .modal-body .srch-box label {
-  width: 50px;
-  font-size: 16px;
+  width: 70px;
+  font-size: 15px;
   font-weight: 500;
 }
 .modal-body .srch-box .form-select {
@@ -2464,6 +2478,11 @@ progress {
   margin-bottom: 22px;
   background-color: #f2f4f6;
   border-radius: 10px;
+}
+
+.modal-filter {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
 }
 
 .modal-backdrop ~ .modal-backdrop {
@@ -2883,6 +2902,19 @@ footer .custom-select::after {
   width: 100%;
 }
 
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: none;
+}
+.top-btn:hover {
+  transition: 0.5s;
+}
+.top-btn:hover .icon-top {
+  background-image: url("../images/top-btn-hover.png");
+}
+
 .visual {
   width: 100%;
   max-width: 1920px;
@@ -3063,6 +3095,10 @@ footer .custom-select::after {
 }
 .main-swiper .swiper-toggle.active .icon-play {
   background-image: url("../images/icon-pause.png");
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .btns-sign {
@@ -4368,6 +4404,26 @@ footer .custom-select::after {
 
 .table-object {
   display: block;
+}
+
+.companion-reason {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  margin-bottom: 85px;
+  background-color: #fff;
+}
+.companion-reason .title {
+  padding: 23px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff453a;
+  border-right: 1px solid #e7e7e7;
+}
+.companion-reason .desc {
+  padding: 23px 30px;
+  color: #777;
 }
 
 .login-wrap {

@@ -73,3 +73,15 @@ footer {
     width: 100%;
   }
 }
+.top-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: none;
+  &:hover{
+    transition: .5s;
+    .icon-top{
+      background-image: url("../images/top-btn-hover.png");
+    }
+  }
+}

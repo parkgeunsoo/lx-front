@@ -113,7 +113,7 @@
           padding: 10px 0 10px 10px;
           border-right: 1px solid #ebebeb;
           color: #777777;
-          font-size: 16px;
+          font-size: 15px;
         }
       }
     }
@@ -178,7 +178,7 @@
         .role-sub-wrap {
           display: none;
           .sub-title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             color: #111;
             padding: 14px 16px 16px 30px;
@@ -222,7 +222,7 @@
       dt {
         position: relative;
         width: 50px;
-        font-size: 16px;
+        font-size: 15px;
         margin-right: 11px;
         font-weight: 500;
         &::after {
@@ -250,7 +250,7 @@
       width: 100%;
       th {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
       }
       td {
         padding: 5px 0;
@@ -285,8 +285,8 @@
     gap: 10px;
     margin-bottom: 10px;
     label {
-      width: 50px;
-      font-size: 16px;
+      width: 70px;
+      font-size: 15px;
       font-weight: 500;
     }
     .form-select {
@@ -396,6 +396,10 @@
       }
     }
   }
+}
+.modal-filter{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
 }
 .modal-backdrop ~ .modal-backdrop {
   z-index: 1061;

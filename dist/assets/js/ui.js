@@ -12,6 +12,22 @@ var Common = {
   },
   common: function common() {
     // confirm 모달
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        if (scrollTop > 200) {
+          $('.top-btn').fadeIn(200);
+        } else {
+          $('.top-btn').fadeOut(200);
+        }
+      });
+      $('.top-btn').click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
   },
   datepickerRun: function datepickerRun() {
     // $("[data-picker='date']").datepicker({
