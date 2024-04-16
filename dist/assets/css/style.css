@@ -716,6 +716,12 @@ progress {
   background-image: url("../images/icon-state-approval.png");
 }
 
+.icon-state-g-approval {
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/icon-state-g-approval.png");
+}
+
 .icon-state-companion {
   width: 36px;
   height: 36px;
@@ -732,6 +738,18 @@ progress {
   width: 36px;
   height: 36px;
   background-image: url("../images/icon-state-wait.png");
+}
+
+.icon-state-none {
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/icon-state-none.png");
+}
+
+.icon-state-g-none {
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/icon-state-g-none.png");
 }
 
 .icon-select-off {
